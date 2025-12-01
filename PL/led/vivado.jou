@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Oct 23 18:17:42 2025
+# Process ID: 13032
+# Current directory: E:/VIVADO_Projects/led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15560 E:\VIVADO_Projects\led\led.xpr
+# Log file: E:/VIVADO_Projects/led/vivado.log
+# Journal file: E:/VIVADO_Projects/led\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/VIVADO_Projects/led/led.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {key[1]} {key[0]}]]
+set_property package_pin "" [get_ports [list  {key[1]}]]
+place_ports {key[1]} V5
+place_ports {key[0]} V4
+place_ports {led[1]} AB15
+place_ports {led[0]} AB14
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/VIVADO_Projects/led/led.runs/impl_1/led.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/VIVADO_Projects/led/led.runs/impl_1/led.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+file mkdir E:/VIVADO_Projects/led/led.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/VIVADO_Projects/led/led.srcs/sim_1/new/led_tb.v w ]
+add_files -fileset sim_1 E:/VIVADO_Projects/led/led.srcs/sim_1/new/led_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+source led.tcl
+update_compile_order -fileset sim_1
+run all
+run all
+run all
+launch_simulation
+source led_tb.tcl
+run all
+run all
+close_sim
+launch_simulation
+source led_tb.tcl
+run all
+close_sim
+launch_simulation
+source led_tb.tcl
+run all
+close_sim
+close_sim

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Oct 28 19:21:44 2025
+# Process ID: 25796
+# Current directory: E:/VIVADO_Projects/ip_clk
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5092 E:\VIVADO_Projects\ip_clk\ip_clk.xpr
+# Log file: E:/VIVADO_Projects/ip_clk/vivado.log
+# Journal file: E:/VIVADO_Projects/ip_clk\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/VIVADO_Projects/ip_clk/ip_clk.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source ip_clk.tcl
+file mkdir E:/VIVADO_Projects/ip_clk/ip_clk.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/VIVADO_Projects/ip_clk/ip_clk.srcs/sim_1/new/ip_clk_tb.v w ]
+add_files -fileset sim_1 E:/VIVADO_Projects/ip_clk/ip_clk.srcs/sim_1/new/ip_clk_tb.v
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source ip_clk.tcl
+update_compile_order -fileset sim_1
+run all
+launch_simulation
+launch_simulation
+run all
+launch_simulation
+launch_simulation
+source ip_clk_tb.tcl
+run all
+close_sim
+close_sim
