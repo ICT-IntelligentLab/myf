@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 19 18:35:18 2025
+# Process ID: 16928
+# Current directory: C:/Users/Admin/Desktop/VIVADO_Projects/PS/hello_word
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13276 C:\Users\Admin\Desktop\VIVADO_Projects\PS\hello_word\hello_word.xpr
+# Log file: C:/Users/Admin/Desktop/VIVADO_Projects/PS/hello_word/vivado.log
+# Journal file: C:/Users/Admin/Desktop/VIVADO_Projects/PS/hello_word\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Admin/Desktop/VIVADO_Projects/PS/hello_word/hello_word.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/Admin/Desktop/VIVADO_Projects/PS/hello_word/hello_word.sdk -hwspec C:/Users/Admin/Desktop/VIVADO_Projects/PS/hello_word/hello_word.sdk/system_wrapper.hdf

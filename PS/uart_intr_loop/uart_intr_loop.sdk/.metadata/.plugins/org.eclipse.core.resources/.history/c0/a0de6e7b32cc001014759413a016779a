@@ -1,0 +1,83 @@
+#include "stdio.h"
+#include "xparameters.h"
+#include "XUartPs.h"
+#include "xscugic.h"
+
+#define		UART_DEVICE_ID		XPAR_XUARTPS_0_DEVICE_ID
+#define 	INTC_DEVICE_ID      XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define 	UART_INTERRUPT_ID   XPAR_XUARTPS_1_INTR
+
+XUartPs_Config *Config;
+XScuGic_Config *IntcConfig;
+XUartPs UartPs;
+XScuGic Intc;
+
+void Uart_Init(XUartPs *UartInstPtr, u16 DeviceId);
+void Uart_Intr_Init(XScuGic *InstancePtr, XUartPs *UartPs, u16 UartIntrId);
+void IntrHandler();
+
+int main()
+{
+	Uart_Init(&UartPs, UART_DEVICE_ID);
+	Uart_Intr_Init(&Intc, &UartPs, UART_INTERRUPT_ID);
+
+	printf("UART INTR LOOP TESTING!\n\r");
+
+	while(1)
+	{
+
+	}
+}
+
+void Uart_Init(XUartPs *UartInstPtr, u16 DeviceId)
+{
+	//根据器件的ID，查找器件的配置信息
+	Config = XUartPs_LookupConfig(DeviceId);
+	//初始化UART
+	XUartPs_CfgInitialize(UartInstPtr, Config, Config->BaseAddress);
+
+	//设置波特率
+	XUartPs_SetBaudRate(UartInstPtr, 115200);
+	//设置RxFIFO触发阈值
+	XUartPs_SetFifoThreshold(UartInstPtr, 1);
+	//设置操作模式
+	XUartPs_SetOperMode(UartInstPtr, XUARTPS_OPER_MODE_NORMAL);
+}
+
+void Uart_Intr_Init(XScuGic *InstancePtr, XUartPs *UartPs, u16 UartIntrId)
+{
+	//查找GIC器件配置信息，并进行初始化
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	XScuGic_CfgInitialize(InstancePtr, IntcConfig, IntcConfig->CpuBaseAddress);
+
+	//初始化ARM处理器异常句柄
+	Xil_ExceptionInit();
+	//来给IRQ异常注册处理程序
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, InstancePtr);
+	//使能处理器中断
+	Xil_ExceptionEnableMask(XIL_EXCEPTION_IRQ);
+
+	//关联中断处理函数
+	XScuGic_Connect(InstancePtr, UartIntrId, (Xil_ExceptionHandler)IntrHandler, (void *)UartPs);
+
+	//使能中断
+	XScuGic_Enable(InstancePtr, UartIntrId);
+	//设置中断触发类型
+	XUartPs_SetInterruptMask(UartPs, XUARTPS_IXR_RXOVR);
+}
+
+void IntrHandler()
+{
+	XUartPs *InstancePtr = (XUartPs*) UartPs;
+
+	u32 IsrStatus;
+	u8 recv_data;
+
+	IsrStatus = XUartPs_ReadReg(InstancePtr->Config.BaseAddress, XUARTPS_IMR_OFFSET);
+
+	IsrStatus &= XUartPs_ReadReg(InstancePtr->Config.BaseAddress, XUARTPS_ISR_OFFSET);
+
+	recv_data = XUartPs_RecvByte(XPAR_XUARTPS_0_BASEADDR);
+
+	XUartPs_SendByte(XPAR_XUARTPS_0_BASEADDR, recv_data);
+}

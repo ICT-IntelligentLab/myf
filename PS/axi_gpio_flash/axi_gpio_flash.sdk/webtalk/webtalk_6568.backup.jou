@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Thu Nov 27 11:24:16 2025
+# Process ID: 6568
+# Current directory: C:/Users/Admin/Desktop/VIVADO_Projects/PS/axi_gpio_flash/axi_gpio_flash.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/Admin/Desktop/VIVADO_Projects/PS/axi_gpio_flash/axi_gpio_flash.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/Admin/Desktop/VIVADO_Projects/PS/axi_gpio_flash/axi_gpio_flash.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

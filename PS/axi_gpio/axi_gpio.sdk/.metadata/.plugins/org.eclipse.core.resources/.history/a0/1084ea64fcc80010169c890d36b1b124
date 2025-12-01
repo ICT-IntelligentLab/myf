@@ -1,0 +1,9 @@
+#include "stdio.h"
+#include "xparameters.h"
+
+int main(void)
+{
+	printf("AXI GPIO TEST!\n\r");
+
+	return 0;
+}

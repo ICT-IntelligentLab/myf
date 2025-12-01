@@ -1,0 +1,44 @@
+#include "stdio.h"
+#include "xparameters.h"
+#include "xgpiops.h"
+#include "xscugic.h"
+#include "xgpiop.h"
+
+#define MIO50_LED1	50
+
+#define GPIO_DEVICE_ID      	XPAR_XGPIOPS_0_DEVICE_ID
+#define INTC_DEVICE_ID     	 	XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define AXI_GPIO_DEVICE_ID		XPAR_GPIO_0_DEVICE_ID
+#define AXI_GPIO_INTERRUPT_ID   XPAR_FABRIC_AIX_GPIO_0_IP2INTC_IRPT_INTR
+
+#define GPIO_CHANNEL1	1
+
+XGpioPs_Config *ConfigPtr;
+XScuGic_Config *IntcConfig;
+XGpioPs Gpio;
+XScuGic Intc;
+XGpio 	AXI_GPIO;
+
+void SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio, u16 GpioIntrId);
+void IntrHandler();
+
+int main(void)
+{
+	printf("AXI GPIO INTERRUPT TEST!\n\r");
+
+	//根据器件的ID，查找器件的配置信息
+	ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+	//初始化GPIO驱动
+	XGpioPs_CfgInitialize(&Gpio, ConfigPtr, ConfigPtr->BaseAddr);
+
+	//把GPIO方向设置为输出(0，输入/ 1，输出)
+	XGpioPs_SetDirectionPin(&Gpio, MIO50_LED1, 1);
+	//设置输出使能(0，关闭/ 1，打开)
+	XGpioPs_SetOutputEnablePin(&Gpio, MIO50_LED1, 1);
+	//写数据到GPIO的输出引脚
+	XGpioPs_WritePin(&Gpio, MIO50_LED1, 1);
+
+	XGpio_Initialize(&AXI_GPIO, XPAR_GPIO_0_DEVICE_ID);
+
+	return 0;
+}

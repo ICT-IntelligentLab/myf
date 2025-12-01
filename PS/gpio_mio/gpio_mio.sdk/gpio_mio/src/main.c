@@ -1,0 +1,35 @@
+#include "stdio.h"
+#include "xparameters.h"
+#include "xgpiops.h"
+#include "sleep.h"
+
+#define GPIO_DEVICE_ID  	XPAR_XGPIOPS_0_DEVICE_ID
+#define MIO50_LED1     		50
+
+XGpioPs_Config *ConfigPtr;
+XGpioPs Gpio;
+
+int main(){
+	printf("GPIO MIO TEST!\n\r");
+
+	//根据器件的ID，查找器件的配置信息
+	ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+	//初始化GPIO驱动
+	XGpioPs_CfgInitialize(&Gpio, ConfigPtr, ConfigPtr->BaseAddr);
+	//把GPIO方向设置为输出(0，输入/ 1，输出)
+	XGpioPs_SetDirectionPin(&Gpio, MIO50_LED1, 1);
+	//设置输出使能(0，关闭/ 1，打开)
+	XGpioPs_SetOutputEnablePin(&Gpio, MIO50_LED1, 1);
+	//写数据到GPIO的输出引脚
+	//XGpioPs_WritePin(&Gpio, MIO50_LED1, 1);
+
+	while(1)
+	{
+		XGpioPs_WritePin(&Gpio, MIO50_LED1, 1);
+		usleep(200000);
+		XGpioPs_WritePin(&Gpio, MIO50_LED1, 0);
+		usleep(200000);
+	}
+
+    return 0;
+}

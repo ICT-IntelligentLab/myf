@@ -1,0 +1,7 @@
+#include "stdio.h"
+#include "xparameters.h"
+
+int main()
+{
+	printf("IP TESTING!\n\r");
+}

@@ -1,0 +1,85 @@
+#include "stdio.h"
+#include "xparameters.h"
+#include "xgpiops.h"
+#include "xscugic.h"
+#include "xgpio.h"
+
+#define MIO50_LED1	50
+
+#define GPIO_DEVICE_ID      	XPAR_XGPIOPS_0_DEVICE_ID
+#define INTC_DEVICE_ID     	 	XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define AXI_GPIO_DEVICE_ID		XPAR_GPIO_0_DEVICE_ID
+#define AXI_GPIO_INTERRUPT_ID   XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+
+#define GPIO_CHANNEL1	1
+
+XGpioPs_Config *ConfigPtr;
+XScuGic_Config *IntcConfig;
+XGpioPs Gpio;
+XScuGic Intc;
+XGpio 	AXI_Gpio;
+
+void SetupInterruptSystem(XScuGic *GicInstancePtr, XGpio *AXI_Gpio, u16 AXI_GpioIntrId);
+void IntrHandler();
+
+int main(void)
+{
+	printf("AXI GPIO INTERRUPT TEST!\n\r");
+
+	//根据器件的ID，查找器件的配置信息
+	ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+	//初始化GPIO驱动
+	XGpioPs_CfgInitialize(&Gpio, ConfigPtr, ConfigPtr->BaseAddr);
+
+	//把GPIO方向设置为输出(0，输入/ 1，输出)
+	XGpioPs_SetDirectionPin(&Gpio, MIO50_LED1, 1);
+	//设置输出使能(0，关闭/ 1，打开)
+	XGpioPs_SetOutputEnablePin(&Gpio, MIO50_LED1, 1);
+
+	//对AXI_GPIO进行初始化
+	XGpio_Initialize(&AXI_Gpio, AXI_GPIO_DEVICE_ID);
+
+	//对AXI_GPIO进行配置
+	XGpio_SetDataDirection(&AXI_Gpio, GPIO_CHANNEL1, 1);
+	XGpio_InterruptGlobalEnable(&AXI_Gpio);
+	XGpio_InterruptEnable(&AXI_Gpio, 1);
+
+	SetupInterruptSystem(&Intc, &AXI_Gpio, AXI_GPIO_INTERRUPT_ID);
+
+	while(1)
+	{
+		XGpioPs_WritePin(&Gpio, MIO50_LED1, ~XGpio_DiscreteRead(&AXI_Gpio, GPIO_CHANNEL1));
+	}
+
+	return 0;
+}
+
+void SetupInterruptSystem(XScuGic *GicInstancePtr, XGpio *AXI_Gpio, u16 AXI_GpioIntrId)
+{
+	//查找GIC器件配置信息，并进行初始化
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	XScuGic_CfgInitialize(GicInstancePtr, IntcConfig, IntcConfig->CpuBaseAddress);
+
+	//初始化ARM处理器异常句柄
+	Xil_ExceptionInit();
+	//来给IRQ异常注册处理程序
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, GicInstancePtr);
+	//使能处理器中断
+	Xil_ExceptionEnableMask(XIL_EXCEPTION_IRQ);
+
+	//关联中断处理函数
+	XScuGic_Connect(GicInstancePtr, AXI_GpioIntrId, (Xil_ExceptionHandler)IntrHandler, (void *)AXI_Gpio);
+
+	//为GPIO器件使能中断
+	XScuGic_Enable(GicInstancePtr, AXI_GpioIntrId);
+
+	//中断类型为高有效电平敏感类型
+	XScuGic_SetPriorityTriggerType(GicInstancePtr, AXI_GpioIntrId, 0xA0, 1);
+}
+
+void IntrHandler()
+{
+	printf("interrupt detected\n\r");
+
+	//XGpio_InterruptClear(&AXI_Gpio, 1);
+}

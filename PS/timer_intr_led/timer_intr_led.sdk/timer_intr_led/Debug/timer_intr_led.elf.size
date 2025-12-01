@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+  81780	   3372	  23408	 108560	  1a810	timer_intr_led.elf

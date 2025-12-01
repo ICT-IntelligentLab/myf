@@ -1,0 +1,95 @@
+#include "stdio.h"
+#include "xparameters.h"
+#include "xgpiops.h"
+#include "xscuTimer.h"
+#include "xscugic.h"
+
+#define	GPIO_DEVICE_ID		XPAR_XGPIOPS_0_DEVICE_ID
+#define	TIMER_DEVICE_ID		XPAR_XSCUTIMER_0_DEVICE_ID
+#define INTC_DEVICE_ID      XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define TIMER_INTERRUPT_ID	XPAR_SCUTIMER_INTR
+#define	MIO50_LED1			50
+#define	TIME_LOAD_VALUE		0x51611
+
+XGpioPs Gpio;
+XScuTimer Timer;
+XScuGic Intc;
+
+u32 ulms = 0;
+u8 ucLed = 0x00;
+
+void Gpio_Init(void);
+void Timer_Init(void);
+void Timer_Intr_Init(XScuGic *InstancePtr, XScuTimer *Timer, u16 TimerIntrId);
+void Timer_Intr_Handler(void);
+
+int main()
+{
+	printf("TIMER INTERRUPT TESTING!\n\r");
+
+	Gpio_Init();
+	Timer_Init();
+	Timer_Intr_Init(&Intc, &Timer, TIMER_INTERRUPT_ID);
+
+	while(1)
+	{
+
+	}
+}
+
+void Gpio_Init(void)
+{
+	XGpioPs_Config *ConfigPtr;
+
+	ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+	XGpioPs_CfgInitialize(&Gpio, ConfigPtr, ConfigPtr->BaseAddr);
+
+	XGpioPs_SetDirectionPin(&Gpio, MIO50_LED1, 1);
+	XGpioPs_SetOutputEnablePin(&Gpio, MIO50_LED1, 1);
+	XGpioPs_WritePin(&Gpio, MIO50_LED1, 0);
+}
+
+void Timer_Init(void)
+{
+	XScuTimer_Config *ConfigPtr;
+
+	//初始化私有定时器
+	ConfigPtr = XScuTimer_LookupConfig(TIMER_DEVICE_ID);
+	XScuTimer_CfgInitialize(&Timer, ConfigPtr, ConfigPtr->BaseAddr);
+
+	//使能自动装载模式
+	XScuTimer_EnableAutoReload(&Timer);
+	//配置计数器初始值
+	XScuTimer_LoadTimer(&Timer, TIME_LOAD_VALUE);
+}
+
+void Timer_Intr_Init(XScuGic *InstancePtr, XScuTimer *Timer, u16 TimerIntrId)
+{
+	XScuGic_Config *IntcConfig;
+
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	XScuGic_CfgInitialize(InstancePtr, IntcConfig, IntcConfig->CpuBaseAddress);
+
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, InstancePtr);
+	Xil_ExceptionEnableMask(XIL_EXCEPTION_IRQ);
+
+	XScuGic_Connect(InstancePtr, TimerIntrId, (Xil_ExceptionHandler)Timer_Intr_Handler, (void *)Timer);
+	XScuGic_Enable(InstancePtr, TimerIntrId);
+	XScuTimer_EnableInterrupt(Timer);
+}
+
+void Timer_Intr_Handler(void)
+{
+	ulms++;
+
+	if(ulms % 200 == 0)
+	{
+		printf("Led Status Change!\n\r");
+
+		ucLed ^= 0x01;
+		XGpioPs_WritePin(&Gpio, MIO50_LED1, ucLed);
+	}
+
+	XScuTimer_ClearInterruptStatus(&Timer);
+}

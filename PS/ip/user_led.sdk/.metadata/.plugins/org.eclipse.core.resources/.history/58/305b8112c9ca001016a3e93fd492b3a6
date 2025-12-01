@@ -1,0 +1,24 @@
+#include "stdio.h"
+#include "xparameters.h"
+#include "breath_led_ip.h"
+#include "xil_io.h"
+#include "sleep.h"
+
+#define 	LED_IP_BASEADDR		XPAR_BREATH_LED_IP_0_S01_AXI_BASEADDR
+#define		LED_IP_REG0			BREATH_LED_IP_S01_AXI_SLV_REG0_OFFSET
+#define		LED_IP_REG1			BREATH_LED_IP_S01_AXI_SLV_REG1_OFFSET
+
+int main()
+{
+	printf("IP TESTING!\n\r");
+
+	BREATH_LED_IP_mWriteReg(LED_IP_BASEADDR, LED_IP_REG1, 0x800001F4);
+
+	while(1)
+	{
+		BREATH_LED_IP_mWriteReg(LED_IP_BASEADDR, LED_IP_REG0, 0x00000001);
+		sleep(5);
+		BREATH_LED_IP_mWriteReg(LED_IP_BASEADDR, LED_IP_REG0, 0x00000000);
+		sleep(2);
+	}
+}

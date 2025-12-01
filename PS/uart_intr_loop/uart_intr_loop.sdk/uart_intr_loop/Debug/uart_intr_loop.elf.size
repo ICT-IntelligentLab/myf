@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+  78876	   3372	  23440	 105688	  19cd8	uart_intr_loop.elf

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Nov 28 16:09:48 2025
+# Process ID: 6076
+# Current directory: C:/Users/Admin/Desktop/VIVADO_Projects/PS/gpio_mio_interrupt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1748 C:\Users\Admin\Desktop\VIVADO_Projects\PS\gpio_mio_interrupt\gpio_mio_interrupt.xpr
+# Log file: C:/Users/Admin/Desktop/VIVADO_Projects/PS/gpio_mio_interrupt/vivado.log
+# Journal file: C:/Users/Admin/Desktop/VIVADO_Projects/PS/gpio_mio_interrupt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Admin/Desktop/VIVADO_Projects/PS/gpio_mio_interrupt/gpio_mio_interrupt.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/Admin/Desktop/VIVADO_Projects/PS/gpio_mio_interrupt/gpio_mio_interrupt.sdk -hwspec C:/Users/Admin/Desktop/VIVADO_Projects/PS/gpio_mio_interrupt/gpio_mio_interrupt.sdk/system_wrapper.hdf

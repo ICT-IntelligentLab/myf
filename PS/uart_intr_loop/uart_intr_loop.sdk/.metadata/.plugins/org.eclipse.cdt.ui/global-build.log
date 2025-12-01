@@ -1,0 +1,663 @@
+15:28:48 **** Build of project uart_intr_loop_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project uart_intr_loop ****
+
+Nothing to build for project uart_intr_loop
+15:31:07 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../uart_intr_loop_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+C:\Users\Admin\Desktop\VIVADO_Projects\PS\uart_intr_loop\uart_intr_loop.sdk\uart_intr_loop_bsp\ps7_cortexa9_0\libsrc\standalone_v6_8\src/xil-crt0.S:138: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: uart_intr_loop.elf] Error 1
+15:31:25 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78684	   3372	  23440	 105496	  19c18	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+15:31:32 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:32:15 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:33:27 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78684	   3372	  23440	 105496	  19c18	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+15:33:31 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:34:24 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78636	   3372	  23440	 105448	  19be8	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+15:34:28 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:34:57 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78684	   3372	  23440	 105496	  19c18	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+15:35:39 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78684	   3372	  23440	 105496	  19c18	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+15:35:42 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:36:13 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:36:34 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78628	   3372	  23440	 105440	  19be0	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+15:36:44 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:37:11 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78636	   3372	  23440	 105448	  19be8	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+15:39:05 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78684	   3372	  23440	 105496	  19c18	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+15:39:15 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:08:18 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../uart_intr_loop_bsp/ps7_cortexa9_0/include/XUartPs.h:185:0,
+                 from ../src/main.c:3:
+../src/main.c: In function 'IntrHandler':
+../src/main.c:73:17: error: 'InstancePtr' undeclared (first use in this function)
+  Xil_AssertVoid(InstancePtr != NULL);
+                 ^
+../../uart_intr_loop_bsp/ps7_cortexa9_0/include/xil_assert.h:103:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+../src/main.c:73:17: note: each undeclared identifier is reported only once for each function it appears in
+  Xil_AssertVoid(InstancePtr != NULL);
+                 ^
+../../uart_intr_loop_bsp/ps7_cortexa9_0/include/xil_assert.h:103:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+../src/main.c:71:6: warning: variable 'IsrStatus' set but not used [-Wunused-but-set-variable]
+  u32 IsrStatus;
+      ^~~~~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+16:11:59 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../uart_intr_loop_bsp/ps7_cortexa9_0/include/XUartPs.h:187:0,
+                 from ../src/main.c:3:
+../src/main.c: In function 'IntrHandler':
+../src/main.c:73:30: error: 'InstancePtr' undeclared (first use in this function)
+  IsrStatus = XUartPs_ReadReg(InstancePtr->Config.BaseAddress,
+                              ^
+../../uart_intr_loop_bsp/ps7_cortexa9_0/include/xuartps_hw.h:378:12: note: in definition of macro 'XUartPs_ReadReg'
+  Xil_In32((BaseAddress) + (u32)(RegOffset))
+            ^~~~~~~~~~~
+../src/main.c:73:30: note: each undeclared identifier is reported only once for each function it appears in
+  IsrStatus = XUartPs_ReadReg(InstancePtr->Config.BaseAddress,
+                              ^
+../../uart_intr_loop_bsp/ps7_cortexa9_0/include/xuartps_hw.h:378:12: note: in definition of macro 'XUartPs_ReadReg'
+  Xil_In32((BaseAddress) + (u32)(RegOffset))
+            ^~~~~~~~~~~
+../src/main.c:71:6: warning: variable 'IsrStatus' set but not used [-Wunused-but-set-variable]
+  u32 IsrStatus;
+      ^~~~~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+16:14:54 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'IntrHandler':
+../src/main.c:71:2: error: cannot convert to a pointer type
+  XUartPs *InstancePtr = (XUartPs*) UartPs;
+  ^~~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+16:15:10 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'IntrHandler':
+../src/main.c:71:2: error: cannot convert to a pointer type
+  XUartPs *InstancePtr = (XUartPs*) UartPs;
+  ^~~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+16:16:04 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'IntrHandler':
+../src/main.c:71:25: error: expected expression before 'XUartPs'
+  XUartPs *InstancePtr = XUartPs UartPs;
+                         ^~~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+16:17:42 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78748	   3372	  23440	 105560	  19c58	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+16:18:28 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'IntrHandler':
+../src/main.c:74:5: warning: variable 'recv_data' set but not used [-Wunused-but-set-variable]
+  u8 recv_data;
+     ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78756	   3372	  23440	 105568	  19c60	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+16:18:41 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'IntrHandler':
+../src/main.c:74:5: warning: unused variable 'recv_data' [-Wunused-variable]
+  u8 recv_data;
+     ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78764	   3372	  23440	 105576	  19c68	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+16:18:47 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78764	   3372	  23440	 105576	  19c68	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+16:18:50 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:23:38 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'IntrHandler':
+../src/main.c:80:2: error: 'IntrReg' undeclared (first use in this function)
+  IntrReg &= (u32)XUARTPS_IXR_RXOVR;
+  ^~~~~~~
+../src/main.c:80:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:81:2: warning: implicit declaration of function 'XGpioPs_WriteReg'; did you mean 'XUartPs_WriteReg'? [-Wimplicit-function-declaration]
+  XGpioPs_WriteReg(InstancePtr->Config.BaseAddress, XGPIOPS_INTSTS_OFFSET, XUARTPS_IXR_RXOVR);
+  ^~~~~~~~~~~~~~~~
+  XUartPs_WriteReg
+../src/main.c:81:52: error: 'XGPIOPS_INTSTS_OFFSET' undeclared (first use in this function); did you mean 'XUARTPS_ISR_OFFSET'?
+  XGpioPs_WriteReg(InstancePtr->Config.BaseAddress, XGPIOPS_INTSTS_OFFSET, XUARTPS_IXR_RXOVR);
+                                                    ^~~~~~~~~~~~~~~~~~~~~
+                                                    XUARTPS_ISR_OFFSET
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+16:24:06 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../uart_intr_loop_bsp/ps7_cortexa9_0/include/XUartPs.h:187:0,
+                 from ../src/main.c:3:
+../src/main.c: In function 'IntrHandler':
+../src/main.c:81:52: error: 'XGPIOPS_INTSTS_OFFSET' undeclared (first use in this function); did you mean 'XUARTPS_ISR_OFFSET'?
+  XUartPs_WriteReg(InstancePtr->Config.BaseAddress, XGPIOPS_INTSTS_OFFSET, XUARTPS_IXR_RXOVR);
+                                                    ^
+../../uart_intr_loop_bsp/ps7_cortexa9_0/include/xuartps_hw.h:397:34: note: in definition of macro 'XUartPs_WriteReg'
+  Xil_Out32((BaseAddress) + (u32)(RegOffset), (u32)(RegisterValue))
+                                  ^~~~~~~~~
+../src/main.c:81:52: note: each undeclared identifier is reported only once for each function it appears in
+  XUartPs_WriteReg(InstancePtr->Config.BaseAddress, XGPIOPS_INTSTS_OFFSET, XUARTPS_IXR_RXOVR);
+                                                    ^
+../../uart_intr_loop_bsp/ps7_cortexa9_0/include/xuartps_hw.h:397:34: note: in definition of macro 'XUartPs_WriteReg'
+  Xil_Out32((BaseAddress) + (u32)(RegOffset), (u32)(RegisterValue))
+                                  ^~~~~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+16:24:32 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../uart_intr_loop_bsp/ps7_cortexa9_0/include/XUartPs.h:187:0,
+                 from ../src/main.c:3:
+../src/main.c: In function 'IntrHandler':
+../src/main.c:81:52: error: 'XUARTPS_INTSTS_OFFSET' undeclared (first use in this function); did you mean 'XUARTPS_ISR_OFFSET'?
+  XUartPs_WriteReg(InstancePtr->Config.BaseAddress, XUARTPS_INTSTS_OFFSET, XUARTPS_IXR_RXOVR);
+                                                    ^
+../../uart_intr_loop_bsp/ps7_cortexa9_0/include/xuartps_hw.h:397:34: note: in definition of macro 'XUartPs_WriteReg'
+  Xil_Out32((BaseAddress) + (u32)(RegOffset), (u32)(RegisterValue))
+                                  ^~~~~~~~~
+../src/main.c:81:52: note: each undeclared identifier is reported only once for each function it appears in
+  XUartPs_WriteReg(InstancePtr->Config.BaseAddress, XUARTPS_INTSTS_OFFSET, XUARTPS_IXR_RXOVR);
+                                                    ^
+../../uart_intr_loop_bsp/ps7_cortexa9_0/include/xuartps_hw.h:397:34: note: in definition of macro 'XUartPs_WriteReg'
+  Xil_Out32((BaseAddress) + (u32)(RegOffset), (u32)(RegisterValue))
+                                  ^~~~~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+16:24:53 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78828	   3372	  23440	 105640	  19ca8	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+16:24:59 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:26:07 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78884	   3372	  23440	 105696	  19ce0	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+16:26:11 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:26:59 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78876	   3372	  23440	 105688	  19cd8	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+16:27:02 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:27:22 **** Auto Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78876	   3372	  23440	 105688	  19cd8	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
+16:27:27 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:49:03 **** Incremental Build of configuration Debug for project uart_intr_loop ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_intr_loop_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: uart_intr_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../uart_intr_loop_bsp/ps7_cortexa9_0/lib -o "uart_intr_loop.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_intr_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size uart_intr_loop.elf  |tee "uart_intr_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78876	   3372	  23440	 105688	  19cd8	uart_intr_loop.elf
+'Finished building: uart_intr_loop.elf.size'
+' '
