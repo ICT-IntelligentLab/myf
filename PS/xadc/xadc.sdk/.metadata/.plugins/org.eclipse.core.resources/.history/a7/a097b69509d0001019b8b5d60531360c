@@ -1,0 +1,35 @@
+#include "stdio.h"
+#include "xparameters.h"
+#include "xadcps.h"
+
+#define XADC_DEVICE_ID	XPAR_XADCPS_0_DEVICE_ID
+
+XAdcPs Adc;
+
+//ADC
+u32 temp_rawdata;			//温度		原始数据
+u32 vcc_pint_rawdata;		//PS 内核电压	原始数据
+u32 vcc_paux_rawdata;		//PS 辅助电压	原始数据
+u32 vcc_pddr_rawData;		//PS DDR电压	原始数据
+u32 vcc_int_rawdata;		//PL 内核电压	原始数据
+u32 vcc_aux_rawdata;		//PL 辅助电压	原始数据
+u32 vcc_bram_rawData;		//PL BRAM电压	原始数据
+
+
+//Function
+void ADC_Init(void);
+
+void main(void)
+{
+	printf("XADC TESTING!\n\r");
+
+	while(1)
+	{
+
+	}
+}
+
+void ADC_Init(void)
+{
+	XAdcPs_Config *Config;
+}

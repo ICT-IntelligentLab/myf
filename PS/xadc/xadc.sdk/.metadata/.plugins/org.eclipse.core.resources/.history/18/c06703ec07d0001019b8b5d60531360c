@@ -1,0 +1,22 @@
+#include "stdio.h"
+#include "xparameters.h"
+#include "xadcps.h"
+
+#define XADC_DEVICE_ID	XPAR_XADCPS_0_DEVICE_ID
+
+void ADC_Init(void);
+
+int main()
+{
+	printf("XADC TESTING!\n\r");
+
+	while(1)
+	{
+
+	}
+}
+
+void ADC_Init(void)
+{
+	XADCPS *Config;
+}

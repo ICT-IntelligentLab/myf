@@ -1,0 +1,49 @@
+#include "stdio.h"
+#include "xparameters.h"
+#include "xadcps.h"
+
+#define XADC_DEVICE_ID	XPAR_XADCPS_0_DEVICE_ID
+
+XAdcPs Adc;
+
+//ADC
+u32 temp_rawdata;			//温度		原始数据
+u32 vcc_pint_rawdata;		//PS 内核电压	原始数据
+u32 vcc_paux_rawdata;		//PS 辅助电压	原始数据
+u32 vcc_pddr_rawData;		//PS DDR电压	原始数据
+u32 vcc_int_rawdata;		//PL 内核电压	原始数据
+u32 vcc_aux_rawdata;		//PL 辅助电压	原始数据
+u32 vcc_bram_rawData;		//PL BRAM电压	原始数据
+float temp;					//温度
+float vcc_pint;				//PS 内核电压
+float vcc_paux;				//PS 辅助电压
+float vcc_pddr;				//PS DDR电压
+float vcc_int;				//PL 内核电压
+float vcc_aux;				//PL 辅助电压
+float vcc_bram;				//PL BRAM电压
+
+
+//Function
+void ADC_Init(void);
+
+int main(void)
+{
+	printf("XADC TESTING!\n\r");
+
+	while(1)
+	{
+
+	}
+}
+
+void ADC_Init(void)
+{
+	XAdcPs_Config *ConfigPtr;
+
+	//初始化XADC驱动
+	ConfigPtr = XAdcPs_LookupConfig(XADC_DEVICE_ID);
+	XAdcPs_CfgInitialize(&xadc_inst, ConfigPtr, ConfigPtr->BaseAddress);
+
+	//设置XADC操作模式为“默认安全模式”
+	XAdcPs_SetSequencerMode(&xadc_inst, XADCPS_SEQ_MODE_SAFE);
+}
