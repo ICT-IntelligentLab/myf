@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec  4 02:04:14 2025
+# Process ID: 12264
+# Current directory: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/library/axi_i2s_adi
+# Command line: vivado.exe -mode batch -source axi_i2s_adi_ip.tcl
+# Log file: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/library/axi_i2s_adi/vivado.log
+# Journal file: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/library/axi_i2s_adi\vivado.jou
+#-----------------------------------------------------------
+source axi_i2s_adi_ip.tcl

@@ -1,0 +1,1287 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec  5 09:10:55 2025
+# Process ID: 5108
+# Current directory: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8136 C:\Users\Admin\Desktop\hdl-hdl_2019_r1\projects\fmcomms2\zed\fmcomms2_zed.xpr
+# Log file: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/vivado.log
+# Journal file: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/Admin/Desktop/ghdl/library'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Admin/Desktop/hdl-hdl_2019_r1/library'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Admin/Desktop/ghdl/library'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 899.941 ; gain = 248.707
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk -hwspec C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk -hwspec C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file mkdir C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk
+file copy -force C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.sysdef C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+
+launch_sdk -workspace C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk -hwspec C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk -hwspec C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - GND_1
+Adding cell -- analog.com:user:axi_ad9361:1.0 - axi_ad9361
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_ad9361_adc_dma
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_ad9361_dac_dma
+Adding cell -- analog.com:user:util_rfifo:1.0 - axi_ad9361_dac_fifo
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_cpu_interconnect
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- analog.com:user:axi_clkgen:1.0 - axi_hdmi_clkgen
+Adding cell -- analog.com:user:axi_hdmi_tx:1.0 - axi_hdmi_core
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_hdmi_dma
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_hp0_interconnect
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_hp1_interconnect
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_hp2_interconnect
+Adding cell -- analog.com:user:axi_i2s_adi:1.0 - axi_i2s_adi
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_fmc
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_main
+Adding cell -- analog.com:user:axi_spdif_tx:1.0 - axi_spdif_tx_core
+Adding cell -- analog.com:user:axi_sysid:1.0 - axi_sysid_0
+Adding cell -- analog.com:user:sysid_rom:1.0 - rom_sys_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_200m_rstgen
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - sys_audio_clkgen
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc
+Adding cell -- analog.com:user:util_i2c_mixer:1.0 - sys_i2c_mixer
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - sys_logic_inv
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - sys_ps7
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen
+Adding cell -- analog.com:user:util_wfifo:1.0 - util_ad9361_adc_fifo
+Adding cell -- analog.com:user:util_cpack2:1.0 - util_ad9361_adc_pack
+Adding cell -- analog.com:user:util_upack2:1.0 - util_ad9361_dac_upack
+Adding cell -- analog.com:user:util_clkdiv:1.0 - util_ad9361_divclk
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - util_ad9361_divclk_reset
+Adding cell -- xilinx.com:ip:util_reduced_logic:2.0 - util_ad9361_divclk_sel
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - util_ad9361_divclk_sel_concat
+Adding cell -- analog.com:user:util_tdd_sync:1.0 - util_ad9361_tdd_sync
+Successfully read diagram <system> from BD file <C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd>
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE7_WIDTH {16} CONFIG.C_PROBE6_WIDTH {16} CONFIG.C_PROBE5_WIDTH {16} CONFIG.C_PROBE4_WIDTH {16} CONFIG.C_PROBE3_WIDTH {16} CONFIG.C_PROBE2_WIDTH {16} CONFIG.C_PROBE1_WIDTH {16} CONFIG.C_PROBE0_WIDTH {16} CONFIG.C_DATA_DEPTH {1024} CONFIG.C_NUM_OF_PROBES {8} CONFIG.C_INPUT_PIPE_STAGES {0} CONFIG.C_PROBE7_MU_CNT {1} CONFIG.C_PROBE6_MU_CNT {1} CONFIG.C_PROBE5_MU_CNT {1} CONFIG.C_PROBE4_MU_CNT {1} CONFIG.C_PROBE3_MU_CNT {1} CONFIG.C_PROBE2_MU_CNT {1} CONFIG.C_PROBE1_MU_CNT {1} CONFIG.C_PROBE0_MU_CNT {1} CONFIG.ALL_PROBE_SAME_MU_CNT {1} CONFIG.C_ENABLE_ILA_AXI_MON {false} CONFIG.C_MONITOR_TYPE {Native}] [get_bd_cells ila_0]
+set_property location {8 3311 1460} [get_bd_cells ila_0]
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins ila_0/probe0]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins ila_0/probe0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {8 3311 1460} [get_bd_cells ila_0]'
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins axi_ad9361/l_clk]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins axi_ad9361/l_clk]'
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins axi_ad9361/l_clk]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins axi_ad9361/l_clk]'
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins axi_ad9361/l_clk]
+connect_bd_net [get_bd_pins ila_0/probe0] [get_bd_pins axi_ad9361_dac_fifo/dout_data_0]
+connect_bd_net [get_bd_pins ila_0/probe1] [get_bd_pins axi_ad9361_dac_fifo/dout_data_1]
+connect_bd_net [get_bd_pins ila_0/probe2] [get_bd_pins axi_ad9361_dac_fifo/dout_data_2]
+connect_bd_net [get_bd_pins ila_0/probe3] [get_bd_pins axi_ad9361_dac_fifo/dout_data_3]
+connect_bd_net [get_bd_pins ila_0/probe4] [get_bd_pins axi_ad9361/adc_valid_q0]
+connect_bd_net [get_bd_pins ila_0/probe5] [get_bd_pins axi_ad9361/adc_valid_i1]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins ila_0/probe5] [get_bd_pins axi_ad9361/adc_valid_i1]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins ila_0/probe4] [get_bd_pins axi_ad9361/adc_valid_q0]'
+connect_bd_net [get_bd_pins ila_0/probe4] [get_bd_pins axi_ad9361/adc_data_i0]
+connect_bd_net [get_bd_pins ila_0/probe5] [get_bd_pins axi_ad9361/adc_data_q0]
+connect_bd_net [get_bd_pins ila_0/probe6] [get_bd_pins axi_ad9361/adc_data_i1]
+connect_bd_net [get_bd_pins ila_0/probe7] [get_bd_pins axi_ad9361/adc_data_q1]
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [#UNDEF] When using EMIO pins for SPI_1 tie SSIN High in the PL bitstream
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [#UNDEF] When using EMIO pins for SPI_1 tie SSIN High in the PL bitstream
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/delay_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK1 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/l_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361_dac_fifo/din_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361_dac_fifo/dout_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361_dac_fifo/dout_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/hdmi_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_hdmi_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/hdmi_out_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_hdmi_core_0_hdmi_out_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/vdma_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/data_clk_i have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_audio_clkgen_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/dma_req_tx_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/dma_req_rx_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_spdif_tx_core/spdif_data_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_audio_clkgen_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /axi_spdif_tx_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_spdif_tx_core/dma_req_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_sysid_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /rom_sys_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_fifo/din_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_fifo/din_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_fifo/dout_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_pack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_dac_upack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_divclk/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_divclk/clk_out have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_tdd_sync/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1289.645 ; gain = 117.422
+generate_target all [get_files  C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\Admin\Desktop\hdl-hdl_2019_r1\projects\fmcomms2\zed\fmcomms2_zed.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+VHDL Output written to : C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_main .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_i2c_mixer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_concat_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_200m_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_logic_inv .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hdmi_clkgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hdmi_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hdmi_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_audio_clkgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_spdif_tx_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_i2s_adi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_fmc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_sysid_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rom_sys_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GND_1 .
+Exporting to file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/hw_handoff/system_axi_hp0_interconnect_0.hwh
+Generated Block Design Tcl file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/hw_handoff/system_axi_hp0_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/synth/system_axi_hp0_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp0_interconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_tdd_sync .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk_sel_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk_sel .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk_reset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_adc_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_adc_pack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361_adc_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361_dac_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_dac_upack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361_dac_dma .
+Exporting to file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/hw_handoff/system_axi_hp1_interconnect_0.hwh
+Generated Block Design Tcl file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/hw_handoff/system_axi_hp1_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/synth/system_axi_hp1_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp1_interconnect .
+Exporting to file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/hw_handoff/system_axi_hp2_interconnect_0.hwh
+Generated Block Design Tcl file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/hw_handoff/system_axi_hp2_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/synth/system_axi_hp2_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp2_interconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_ila_0_0/system_ila_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+Exporting to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1551.281 ; gain = 251.699
+export_ip_user_files -of_objects [get_files C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd] -directory C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.ip_user_files -ipstatic_source_dir C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/modelsim} {questa=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/questa} {riviera=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/riviera} {activehdl=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+launch_runs synth_2 -jobs 16
+[Fri Dec  5 10:33:59 2025] Launched synth_2...
+Run output will be captured here: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/synth_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 16
+[Fri Dec  5 10:40:18 2025] Launched impl_2...
+Run output will be captured here: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/runme.log
+file copy -force C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.sysdef C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+
+launch_sdk -workspace C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk -hwspec C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk -hwspec C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'i_system_wrapper/system_i/ila_0' at location 'uuid_F1F9ED1658135C08B893B9C7B010F192' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'i_system_wrapper/system_i/ila_0' at location 'uuid_F1F9ED1658135C08B893B9C7B010F192' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'i_system_wrapper/system_i/ila_0' at location 'uuid_F1F9ED1658135C08B893B9C7B010F192' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 10:48:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 10:48:05
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 10:48:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 10:48:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 10:52:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 10:52:54
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 10:54:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 10:54:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 10:54:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 10:54:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 10:55:45
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 10:55:45
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 10:55:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 10:55:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 10:55:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 10:55:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 10:56:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 10:56:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 10:58:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 10:58:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 10:59:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 10:59:05
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 10:59:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 10:59:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:00:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:00:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {i_system_wrapper/system_i/axi_ad9361_adc_data_i0} {i_system_wrapper/system_i/axi_ad9361_adc_data_q0} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_0} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_2} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:02:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:02:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:02:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:02:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:03:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:03:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:03:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:03:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:04:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:04:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:51:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:51:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:51:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:51:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:51:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:51:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:52:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:52:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:52:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:52:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_1} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_1} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {i_system_wrapper/system_i/axi_ad9361_adc_data_i1} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:53:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:53:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:54:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:54:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:55:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:55:05
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:56:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:56:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:56:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:56:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:58:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:58:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:58:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:58:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:58:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:58:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 11:58:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 11:58:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:00:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:00:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:00:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:00:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:02:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:02:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:02:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:02:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:03:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:03:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:05:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:05:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:12:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:12:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:13:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:13:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:15:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:15:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:15:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:15:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:15:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:15:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:18:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:18:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:28:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:28:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:29:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:29:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:29:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:29:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:30:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:30:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:30:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:30:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:30:48
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:30:48
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:31:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:31:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_0} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_2} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_1} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_3} }
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {i_system_wrapper/system_i/axi_ad9361_adc_data_i0} {i_system_wrapper/system_i/axi_ad9361_adc_data_q0} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {i_system_wrapper/system_i/axi_ad9361_adc_data_i1} {i_system_wrapper/system_i/axi_ad9361_adc_data_q1} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:32:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:32:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:32:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:32:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {i_system_wrapper/system_i/axi_ad9361_adc_data_i0} {i_system_wrapper/system_i/axi_ad9361_adc_data_q0} }
+open_bd_design {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd}
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {i_system_wrapper/system_i/axi_ad9361_adc_data_i0} {i_system_wrapper/system_i/axi_ad9361_adc_data_i1} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_0} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_1} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:34:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:34:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:34:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:34:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:34:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:34:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'i_system_wrapper/system_i/ila_0' at location 'uuid_F1F9ED1658135C08B893B9C7B010F192' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'i_system_wrapper/system_i/ila_0' at location 'uuid_F1F9ED1658135C08B893B9C7B010F192' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:35:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:35:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:35:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:35:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:36:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:36:13
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:36:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:36:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:36:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:36:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:37:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:37:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:37:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:37:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:37:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:37:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {i_system_wrapper/system_i/axi_ad9361_adc_data_i0} {i_system_wrapper/system_i/axi_ad9361_adc_data_q0} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_0} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_1} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:38:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:38:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd}
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {i_system_wrapper/system_i/axi_ad9361_adc_data_i0} {i_system_wrapper/system_i/axi_ad9361_adc_data_i1} {i_system_wrapper/system_i/axi_ad9361_adc_data_q0} {i_system_wrapper/system_i/axi_ad9361_adc_data_q1} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_0} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_1} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_2} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_3} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:40:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:40:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:41:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:41:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:41:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:41:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {i_system_wrapper/system_i/axi_ad9361_adc_data_i1} {i_system_wrapper/system_i/axi_ad9361_adc_data_q1} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:42:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:42:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:42:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:42:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:42:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:42:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:43:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:43:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {i_system_wrapper/system_i/axi_ad9361_adc_data_i0} {i_system_wrapper/system_i/axi_ad9361_adc_data_q0} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_0} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_1} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:43:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:43:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:43:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:43:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:43:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:43:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:47:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:47:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:47:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:47:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'i_system_wrapper/system_i/ila_0' at location 'uuid_F1F9ED1658135C08B893B9C7B010F192' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:48:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:48:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:48:48
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:48:48
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:49:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:49:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:49:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:49:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+launch_sdk -workspace C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk -hwspec C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk -hwspec C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:52:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:52:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:53:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:53:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:53:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:53:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:54:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:54:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:54:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:54:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:54:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:54:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:54:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:54:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:55:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:55:13
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:55:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:55:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {i_system_wrapper/system_i/axi_ad9361_adc_data_i0} {i_system_wrapper/system_i/axi_ad9361_adc_data_q0} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_1} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_0} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:55:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:55:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:56:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:56:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:56:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:56:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:56:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:56:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:56:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:56:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:56:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:56:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:56:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:56:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:57:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:57:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:57:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:57:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Dec-05 12:57:10
+INFO: [Common 17-14] Message 'Labtools 27-1964' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Dec-05 12:57:10
+INFO: [Common 17-14] Message 'Labtools 27-1966' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Common 17-14] Message 'Labtools 27-3304' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+open_bd_design {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'i_system_wrapper/system_i/ila_0' at location 'uuid_F1F9ED1658135C08B893B9C7B010F192' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'i_system_wrapper/system_i/ila_0' at location 'uuid_F1F9ED1658135C08B893B9C7B010F192' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {i_system_wrapper/system_i/axi_ad9361_adc_data_i1} {i_system_wrapper/system_i/axi_ad9361_adc_data_q1} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_2} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_3} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'i_system_wrapper/system_i/ila_0' at location 'uuid_F1F9ED1658135C08B893B9C7B010F192' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {i_system_wrapper/system_i/axi_ad9361_adc_data_i0} {i_system_wrapper/system_i/axi_ad9361_adc_data_q0} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_0} {i_system_wrapper/system_i/axi_ad9361_dac_fifo_dout_data_1} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"i_system_wrapper/system_i/ila_0"}]]
+save_wave_config {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  5 13:10:07 2025...

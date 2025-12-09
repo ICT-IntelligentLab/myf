@@ -1,0 +1,1328 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_util_ad9361_tdd_sync_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_util_ad9361_tdd_sync_0 (analog.com:user:util_tdd_sync:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_util_ad9361_divclk_sel_concat_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_util_ad9361_divclk_sel_concat_0 (xilinx.com:ip:xlconcat:2.1 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_util_ad9361_divclk_sel_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_util_ad9361_divclk_sel_0 (xilinx.com:ip:util_reduced_logic:2.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_util_ad9361_divclk_reset_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_util_ad9361_divclk_reset_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_util_ad9361_divclk_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_util_ad9361_divclk_0 (analog.com:user:util_clkdiv:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_util_ad9361_dac_upack_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_util_ad9361_dac_upack_0 (analog.com:user:util_upack2:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_util_ad9361_adc_pack_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_util_ad9361_adc_pack_0 (analog.com:user:util_cpack2:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_util_ad9361_adc_fifo_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_util_ad9361_adc_fifo_0 (analog.com:user:util_wfifo:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_sys_rstgen_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_sys_rstgen_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_sys_ps7_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_sys_ps7_0 (xilinx.com:ip:processing_system7:5.5 (Rev. 6)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP0_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP0_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP1_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP1_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP0_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP1_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_sys_logic_inv_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_sys_logic_inv_0 (xilinx.com:ip:util_vector_logic:2.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_sys_i2c_mixer_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_sys_i2c_mixer_0 (analog.com:user:util_i2c_mixer:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_sys_concat_intc_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_sys_concat_intc_0 (xilinx.com:ip:xlconcat:2.1 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_sys_audio_clkgen_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_sys_audio_clkgen_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_sys_200m_rstgen_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_sys_200m_rstgen_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_rom_sys_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_rom_sys_0_0 (analog.com:user:sysid_rom:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_sysid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_sysid_0_0 (analog.com:user:axi_sysid:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_spdif_tx_core_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_spdif_tx_core_0 (analog.com:user:axi_spdif_tx:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_iic_main_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_iic_main_0 (xilinx.com:ip:axi_iic:2.0 (Rev. 21)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_iic_fmc_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_iic_fmc_0 (xilinx.com:ip:axi_iic:2.0 (Rev. 21)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_i2s_adi_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_i2s_adi_0 (analog.com:user:axi_i2s_adi:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_hp2_interconnect_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_hp2_interconnect_0 (xilinx.com:ip:smartconnect:1.0 (Rev. 10)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_axi_hp2_interconnect_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_axi_hp2_interconnect_0'. These changes may impact your design.
+
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_hp1_interconnect_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_hp1_interconnect_0 (xilinx.com:ip:smartconnect:1.0 (Rev. 10)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_axi_hp1_interconnect_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_axi_hp1_interconnect_0'. These changes may impact your design.
+
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_hp0_interconnect_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_hp0_interconnect_0 (xilinx.com:ip:smartconnect:1.0 (Rev. 10)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_axi_hp0_interconnect_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_axi_hp0_interconnect_0'. These changes may impact your design.
+
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_hdmi_dma_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of system_axi_hdmi_dma_0 (analog.com:user:axi_dmac:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'DMA_AXI_PROTOCOL_DEST' from '0' to '1' has been ignored for IP 'system_axi_hdmi_dma_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv analog.com:user:axi_dmac:1.0 -user_name system_axi_hdmi_dma_0
+set_property -dict "\
+  CONFIG.ALLOW_ASYM_MEM {1} \
+  CONFIG.ASYNC_CLK_DEST_REQ {false} \
+  CONFIG.ASYNC_CLK_REQ_SRC {false} \
+  CONFIG.ASYNC_CLK_SRC_DEST {false} \
+  CONFIG.AXI_ID_WIDTH_DEST {1} \
+  CONFIG.AXI_ID_WIDTH_SRC {1} \
+  CONFIG.AXI_SLICE_DEST {false} \
+  CONFIG.AXI_SLICE_SRC {false} \
+  CONFIG.CYCLIC {true} \
+  CONFIG.Component_Name {system_axi_hdmi_dma_0} \
+  CONFIG.DISABLE_DEBUG_REGISTERS {false} \
+  CONFIG.DMA_2D_TRANSFER {true} \
+  CONFIG.DMA_AXIS_DEST_W {4} \
+  CONFIG.DMA_AXIS_ID_W {8} \
+  CONFIG.DMA_AXI_ADDR_WIDTH {29} \
+  CONFIG.DMA_AXI_PROTOCOL_DEST {1} \
+  CONFIG.DMA_AXI_PROTOCOL_SRC {1} \
+  CONFIG.DMA_DATA_WIDTH_DEST {64} \
+  CONFIG.DMA_DATA_WIDTH_SRC {64} \
+  CONFIG.DMA_LENGTH_WIDTH {24} \
+  CONFIG.DMA_TYPE_DEST {1} \
+  CONFIG.DMA_TYPE_SRC {0} \
+  CONFIG.ENABLE_DIAGNOSTICS_IF {false} \
+  CONFIG.FIFO_SIZE {8} \
+  CONFIG.ID {0} \
+  CONFIG.MAX_BYTES_PER_BURST {128} \
+  CONFIG.SYNC_TRANSFER_START {false} \
+  CONFIG.fifo_rd_clk.ASSOCIATED_BUSIF {} \
+  CONFIG.fifo_rd_clk.ASSOCIATED_RESET {} \
+  CONFIG.fifo_rd_clk.CLK_DOMAIN {} \
+  CONFIG.fifo_rd_clk.FREQ_HZ {100000000} \
+  CONFIG.fifo_rd_clk.INSERT_VIP {0} \
+  CONFIG.fifo_rd_clk.PHASE {0.000} \
+  CONFIG.fifo_rd_signal_clock.ASSOCIATED_BUSIF {fifo_rd} \
+  CONFIG.fifo_rd_signal_clock.ASSOCIATED_RESET {} \
+  CONFIG.fifo_rd_signal_clock.CLK_DOMAIN {} \
+  CONFIG.fifo_rd_signal_clock.FREQ_HZ {100000000} \
+  CONFIG.fifo_rd_signal_clock.INSERT_VIP {0} \
+  CONFIG.fifo_rd_signal_clock.PHASE {0.000} \
+  CONFIG.fifo_wr_clk.ASSOCIATED_BUSIF {fifo_wr} \
+  CONFIG.fifo_wr_clk.ASSOCIATED_RESET {} \
+  CONFIG.fifo_wr_clk.CLK_DOMAIN {} \
+  CONFIG.fifo_wr_clk.FREQ_HZ {100000000} \
+  CONFIG.fifo_wr_clk.INSERT_VIP {0} \
+  CONFIG.fifo_wr_clk.PHASE {0.000} \
+  CONFIG.fifo_wr_signal_clock.ASSOCIATED_BUSIF {fifo_wr} \
+  CONFIG.fifo_wr_signal_clock.ASSOCIATED_RESET {} \
+  CONFIG.fifo_wr_signal_clock.CLK_DOMAIN {} \
+  CONFIG.fifo_wr_signal_clock.FREQ_HZ {100000000} \
+  CONFIG.fifo_wr_signal_clock.INSERT_VIP {0} \
+  CONFIG.fifo_wr_signal_clock.PHASE {0.000} \
+  CONFIG.irq.PortWidth {1} \
+  CONFIG.irq.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.m_axis.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.m_axis.FREQ_HZ {100000000} \
+  CONFIG.m_axis.HAS_TKEEP {1} \
+  CONFIG.m_axis.HAS_TLAST {1} \
+  CONFIG.m_axis.HAS_TREADY {1} \
+  CONFIG.m_axis.HAS_TSTRB {1} \
+  CONFIG.m_axis.INSERT_VIP {0} \
+  CONFIG.m_axis.LAYERED_METADATA {undef} \
+  CONFIG.m_axis.PHASE {0.000} \
+  CONFIG.m_axis.TDATA_NUM_BYTES {8} \
+  CONFIG.m_axis.TDEST_WIDTH {4} \
+  CONFIG.m_axis.TID_WIDTH {8} \
+  CONFIG.m_axis.TUSER_WIDTH {1} \
+  CONFIG.m_axis_aclk.ASSOCIATED_BUSIF {m_axis} \
+  CONFIG.m_axis_aclk.ASSOCIATED_RESET {} \
+  CONFIG.m_axis_aclk.CLK_DOMAIN {} \
+  CONFIG.m_axis_aclk.FREQ_HZ {100000000} \
+  CONFIG.m_axis_aclk.INSERT_VIP {0} \
+  CONFIG.m_axis_aclk.PHASE {0.000} \
+  CONFIG.m_axis_signal_clock.ASSOCIATED_BUSIF {m_axis} \
+  CONFIG.m_axis_signal_clock.ASSOCIATED_RESET {} \
+  CONFIG.m_axis_signal_clock.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.m_axis_signal_clock.FREQ_HZ {100000000} \
+  CONFIG.m_axis_signal_clock.INSERT_VIP {0} \
+  CONFIG.m_axis_signal_clock.PHASE {0.000} \
+  CONFIG.m_dest_axi_aclk.ASSOCIATED_BUSIF {m_dest_axi} \
+  CONFIG.m_dest_axi_aclk.ASSOCIATED_RESET {m_dest_axi_aresetn} \
+  CONFIG.m_dest_axi_aclk.CLK_DOMAIN {} \
+  CONFIG.m_dest_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.m_dest_axi_aclk.INSERT_VIP {0} \
+  CONFIG.m_dest_axi_aclk.PHASE {0.000} \
+  CONFIG.m_dest_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.m_dest_axi_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.m_src_axi.ADDR_WIDTH {29} \
+  CONFIG.m_src_axi.ARUSER_WIDTH {0} \
+  CONFIG.m_src_axi.AWUSER_WIDTH {0} \
+  CONFIG.m_src_axi.BUSER_WIDTH {0} \
+  CONFIG.m_src_axi.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.m_src_axi.DATA_WIDTH {64} \
+  CONFIG.m_src_axi.FREQ_HZ {100000000} \
+  CONFIG.m_src_axi.HAS_BRESP {0} \
+  CONFIG.m_src_axi.HAS_BURST {0} \
+  CONFIG.m_src_axi.HAS_CACHE {0} \
+  CONFIG.m_src_axi.HAS_LOCK {0} \
+  CONFIG.m_src_axi.HAS_PROT {0} \
+  CONFIG.m_src_axi.HAS_QOS {0} \
+  CONFIG.m_src_axi.HAS_REGION {0} \
+  CONFIG.m_src_axi.HAS_RRESP {1} \
+  CONFIG.m_src_axi.HAS_WSTRB {0} \
+  CONFIG.m_src_axi.ID_WIDTH {0} \
+  CONFIG.m_src_axi.INSERT_VIP {0} \
+  CONFIG.m_src_axi.MAX_BURST_LENGTH {16} \
+  CONFIG.m_src_axi.NUM_READ_OUTSTANDING {8} \
+  CONFIG.m_src_axi.NUM_READ_THREADS {1} \
+  CONFIG.m_src_axi.NUM_WRITE_OUTSTANDING {0} \
+  CONFIG.m_src_axi.NUM_WRITE_THREADS {1} \
+  CONFIG.m_src_axi.PHASE {0.000} \
+  CONFIG.m_src_axi.PROTOCOL {AXI3} \
+  CONFIG.m_src_axi.READ_WRITE_MODE {READ_ONLY} \
+  CONFIG.m_src_axi.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_src_axi.RUSER_WIDTH {0} \
+  CONFIG.m_src_axi.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_src_axi.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_src_axi.WUSER_WIDTH {0} \
+  CONFIG.m_src_axi_aclk.ASSOCIATED_BUSIF {m_src_axi} \
+  CONFIG.m_src_axi_aclk.ASSOCIATED_RESET {m_src_axi_aresetn} \
+  CONFIG.m_src_axi_aclk.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.m_src_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.m_src_axi_aclk.INSERT_VIP {0} \
+  CONFIG.m_src_axi_aclk.PHASE {0.000} \
+  CONFIG.m_src_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.m_src_axi_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.s_axi.ADDR_WIDTH {11} \
+  CONFIG.s_axi.ARUSER_WIDTH {0} \
+  CONFIG.s_axi.AWUSER_WIDTH {0} \
+  CONFIG.s_axi.BUSER_WIDTH {0} \
+  CONFIG.s_axi.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.s_axi.DATA_WIDTH {32} \
+  CONFIG.s_axi.FREQ_HZ {100000000} \
+  CONFIG.s_axi.HAS_BRESP {1} \
+  CONFIG.s_axi.HAS_BURST {0} \
+  CONFIG.s_axi.HAS_CACHE {0} \
+  CONFIG.s_axi.HAS_LOCK {0} \
+  CONFIG.s_axi.HAS_PROT {1} \
+  CONFIG.s_axi.HAS_QOS {0} \
+  CONFIG.s_axi.HAS_REGION {0} \
+  CONFIG.s_axi.HAS_RRESP {1} \
+  CONFIG.s_axi.HAS_WSTRB {1} \
+  CONFIG.s_axi.ID_WIDTH {0} \
+  CONFIG.s_axi.INSERT_VIP {0} \
+  CONFIG.s_axi.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi.NUM_READ_OUTSTANDING {2} \
+  CONFIG.s_axi.NUM_READ_THREADS {1} \
+  CONFIG.s_axi.NUM_WRITE_OUTSTANDING {2} \
+  CONFIG.s_axi.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi.PHASE {0.000} \
+  CONFIG.s_axi.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.RUSER_WIDTH {0} \
+  CONFIG.s_axi.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.WUSER_WIDTH {0} \
+  CONFIG.s_axi_aclk.ASSOCIATED_BUSIF {s_axi} \
+  CONFIG.s_axi_aclk.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.s_axi_aclk.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.s_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.s_axi_aclk.INSERT_VIP {0} \
+  CONFIG.s_axi_aclk.PHASE {0.000} \
+  CONFIG.s_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.s_axi_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.s_axis_aclk.ASSOCIATED_BUSIF {} \
+  CONFIG.s_axis_aclk.ASSOCIATED_RESET {} \
+  CONFIG.s_axis_aclk.CLK_DOMAIN {} \
+  CONFIG.s_axis_aclk.FREQ_HZ {100000000} \
+  CONFIG.s_axis_aclk.INSERT_VIP {0} \
+  CONFIG.s_axis_aclk.PHASE {0.000} \
+  CONFIG.s_axis_signal_clock.ASSOCIATED_BUSIF {s_axis} \
+  CONFIG.s_axis_signal_clock.ASSOCIATED_RESET {} \
+  CONFIG.s_axis_signal_clock.CLK_DOMAIN {} \
+  CONFIG.s_axis_signal_clock.FREQ_HZ {100000000} \
+  CONFIG.s_axis_signal_clock.INSERT_VIP {0} \
+  CONFIG.s_axis_signal_clock.PHASE {0.000} " [get_ips system_axi_hdmi_dma_0]
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_hdmi_core_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_hdmi_core_0 (analog.com:user:axi_hdmi_tx:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_hdmi_clkgen_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_hdmi_clkgen_0 (analog.com:user:axi_clkgen:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_cpu_interconnect_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_cpu_interconnect_0 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 19)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ad9361_dac_fifo_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_ad9361_dac_fifo_0 (analog.com:user:util_rfifo:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ad9361_dac_dma_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of system_axi_ad9361_dac_dma_0 (analog.com:user:axi_dmac:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'DMA_AXI_PROTOCOL_DEST' from '0' to '1' has been ignored for IP 'system_axi_ad9361_dac_dma_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv analog.com:user:axi_dmac:1.0 -user_name system_axi_ad9361_dac_dma_0
+set_property -dict "\
+  CONFIG.ALLOW_ASYM_MEM {1} \
+  CONFIG.ASYNC_CLK_DEST_REQ {true} \
+  CONFIG.ASYNC_CLK_REQ_SRC {false} \
+  CONFIG.ASYNC_CLK_SRC_DEST {true} \
+  CONFIG.AXI_ID_WIDTH_DEST {1} \
+  CONFIG.AXI_ID_WIDTH_SRC {1} \
+  CONFIG.AXI_SLICE_DEST {false} \
+  CONFIG.AXI_SLICE_SRC {false} \
+  CONFIG.CYCLIC {true} \
+  CONFIG.Component_Name {system_axi_ad9361_dac_dma_0} \
+  CONFIG.DISABLE_DEBUG_REGISTERS {false} \
+  CONFIG.DMA_2D_TRANSFER {false} \
+  CONFIG.DMA_AXIS_DEST_W {4} \
+  CONFIG.DMA_AXIS_ID_W {8} \
+  CONFIG.DMA_AXI_ADDR_WIDTH {29} \
+  CONFIG.DMA_AXI_PROTOCOL_DEST {1} \
+  CONFIG.DMA_AXI_PROTOCOL_SRC {1} \
+  CONFIG.DMA_DATA_WIDTH_DEST {64} \
+  CONFIG.DMA_DATA_WIDTH_SRC {64} \
+  CONFIG.DMA_LENGTH_WIDTH {24} \
+  CONFIG.DMA_TYPE_DEST {1} \
+  CONFIG.DMA_TYPE_SRC {0} \
+  CONFIG.ENABLE_DIAGNOSTICS_IF {false} \
+  CONFIG.FIFO_SIZE {8} \
+  CONFIG.ID {0} \
+  CONFIG.MAX_BYTES_PER_BURST {128} \
+  CONFIG.SYNC_TRANSFER_START {false} \
+  CONFIG.fifo_rd_clk.ASSOCIATED_BUSIF {} \
+  CONFIG.fifo_rd_clk.ASSOCIATED_RESET {} \
+  CONFIG.fifo_rd_clk.CLK_DOMAIN {} \
+  CONFIG.fifo_rd_clk.FREQ_HZ {100000000} \
+  CONFIG.fifo_rd_clk.INSERT_VIP {0} \
+  CONFIG.fifo_rd_clk.PHASE {0.000} \
+  CONFIG.fifo_rd_signal_clock.ASSOCIATED_BUSIF {fifo_rd} \
+  CONFIG.fifo_rd_signal_clock.ASSOCIATED_RESET {} \
+  CONFIG.fifo_rd_signal_clock.CLK_DOMAIN {} \
+  CONFIG.fifo_rd_signal_clock.FREQ_HZ {100000000} \
+  CONFIG.fifo_rd_signal_clock.INSERT_VIP {0} \
+  CONFIG.fifo_rd_signal_clock.PHASE {0.000} \
+  CONFIG.fifo_wr_clk.ASSOCIATED_BUSIF {fifo_wr} \
+  CONFIG.fifo_wr_clk.ASSOCIATED_RESET {} \
+  CONFIG.fifo_wr_clk.CLK_DOMAIN {} \
+  CONFIG.fifo_wr_clk.FREQ_HZ {100000000} \
+  CONFIG.fifo_wr_clk.INSERT_VIP {0} \
+  CONFIG.fifo_wr_clk.PHASE {0.000} \
+  CONFIG.fifo_wr_signal_clock.ASSOCIATED_BUSIF {fifo_wr} \
+  CONFIG.fifo_wr_signal_clock.ASSOCIATED_RESET {} \
+  CONFIG.fifo_wr_signal_clock.CLK_DOMAIN {} \
+  CONFIG.fifo_wr_signal_clock.FREQ_HZ {100000000} \
+  CONFIG.fifo_wr_signal_clock.INSERT_VIP {0} \
+  CONFIG.fifo_wr_signal_clock.PHASE {0.000} \
+  CONFIG.irq.PortWidth {1} \
+  CONFIG.irq.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.m_axis.CLK_DOMAIN {system_util_ad9361_divclk_0_clk_out} \
+  CONFIG.m_axis.FREQ_HZ {100000000} \
+  CONFIG.m_axis.HAS_TKEEP {1} \
+  CONFIG.m_axis.HAS_TLAST {1} \
+  CONFIG.m_axis.HAS_TREADY {1} \
+  CONFIG.m_axis.HAS_TSTRB {1} \
+  CONFIG.m_axis.INSERT_VIP {0} \
+  CONFIG.m_axis.LAYERED_METADATA {undef} \
+  CONFIG.m_axis.PHASE {0.000} \
+  CONFIG.m_axis.TDATA_NUM_BYTES {8} \
+  CONFIG.m_axis.TDEST_WIDTH {4} \
+  CONFIG.m_axis.TID_WIDTH {8} \
+  CONFIG.m_axis.TUSER_WIDTH {1} \
+  CONFIG.m_axis_aclk.ASSOCIATED_BUSIF {m_axis} \
+  CONFIG.m_axis_aclk.ASSOCIATED_RESET {} \
+  CONFIG.m_axis_aclk.CLK_DOMAIN {} \
+  CONFIG.m_axis_aclk.FREQ_HZ {100000000} \
+  CONFIG.m_axis_aclk.INSERT_VIP {0} \
+  CONFIG.m_axis_aclk.PHASE {0.000} \
+  CONFIG.m_axis_signal_clock.ASSOCIATED_BUSIF {m_axis} \
+  CONFIG.m_axis_signal_clock.ASSOCIATED_RESET {} \
+  CONFIG.m_axis_signal_clock.CLK_DOMAIN {system_util_ad9361_divclk_0_clk_out} \
+  CONFIG.m_axis_signal_clock.FREQ_HZ {100000000} \
+  CONFIG.m_axis_signal_clock.INSERT_VIP {0} \
+  CONFIG.m_axis_signal_clock.PHASE {0.000} \
+  CONFIG.m_dest_axi_aclk.ASSOCIATED_BUSIF {m_dest_axi} \
+  CONFIG.m_dest_axi_aclk.ASSOCIATED_RESET {m_dest_axi_aresetn} \
+  CONFIG.m_dest_axi_aclk.CLK_DOMAIN {} \
+  CONFIG.m_dest_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.m_dest_axi_aclk.INSERT_VIP {0} \
+  CONFIG.m_dest_axi_aclk.PHASE {0.000} \
+  CONFIG.m_dest_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.m_dest_axi_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.m_src_axi.ADDR_WIDTH {29} \
+  CONFIG.m_src_axi.ARUSER_WIDTH {0} \
+  CONFIG.m_src_axi.AWUSER_WIDTH {0} \
+  CONFIG.m_src_axi.BUSER_WIDTH {0} \
+  CONFIG.m_src_axi.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.m_src_axi.DATA_WIDTH {64} \
+  CONFIG.m_src_axi.FREQ_HZ {100000000} \
+  CONFIG.m_src_axi.HAS_BRESP {0} \
+  CONFIG.m_src_axi.HAS_BURST {0} \
+  CONFIG.m_src_axi.HAS_CACHE {0} \
+  CONFIG.m_src_axi.HAS_LOCK {0} \
+  CONFIG.m_src_axi.HAS_PROT {0} \
+  CONFIG.m_src_axi.HAS_QOS {0} \
+  CONFIG.m_src_axi.HAS_REGION {0} \
+  CONFIG.m_src_axi.HAS_RRESP {1} \
+  CONFIG.m_src_axi.HAS_WSTRB {0} \
+  CONFIG.m_src_axi.ID_WIDTH {0} \
+  CONFIG.m_src_axi.INSERT_VIP {0} \
+  CONFIG.m_src_axi.MAX_BURST_LENGTH {16} \
+  CONFIG.m_src_axi.NUM_READ_OUTSTANDING {8} \
+  CONFIG.m_src_axi.NUM_READ_THREADS {1} \
+  CONFIG.m_src_axi.NUM_WRITE_OUTSTANDING {0} \
+  CONFIG.m_src_axi.NUM_WRITE_THREADS {1} \
+  CONFIG.m_src_axi.PHASE {0.000} \
+  CONFIG.m_src_axi.PROTOCOL {AXI3} \
+  CONFIG.m_src_axi.READ_WRITE_MODE {READ_ONLY} \
+  CONFIG.m_src_axi.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_src_axi.RUSER_WIDTH {0} \
+  CONFIG.m_src_axi.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_src_axi.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_src_axi.WUSER_WIDTH {0} \
+  CONFIG.m_src_axi_aclk.ASSOCIATED_BUSIF {m_src_axi} \
+  CONFIG.m_src_axi_aclk.ASSOCIATED_RESET {m_src_axi_aresetn} \
+  CONFIG.m_src_axi_aclk.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.m_src_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.m_src_axi_aclk.INSERT_VIP {0} \
+  CONFIG.m_src_axi_aclk.PHASE {0.000} \
+  CONFIG.m_src_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.m_src_axi_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.s_axi.ADDR_WIDTH {11} \
+  CONFIG.s_axi.ARUSER_WIDTH {0} \
+  CONFIG.s_axi.AWUSER_WIDTH {0} \
+  CONFIG.s_axi.BUSER_WIDTH {0} \
+  CONFIG.s_axi.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.s_axi.DATA_WIDTH {32} \
+  CONFIG.s_axi.FREQ_HZ {100000000} \
+  CONFIG.s_axi.HAS_BRESP {1} \
+  CONFIG.s_axi.HAS_BURST {0} \
+  CONFIG.s_axi.HAS_CACHE {0} \
+  CONFIG.s_axi.HAS_LOCK {0} \
+  CONFIG.s_axi.HAS_PROT {1} \
+  CONFIG.s_axi.HAS_QOS {0} \
+  CONFIG.s_axi.HAS_REGION {0} \
+  CONFIG.s_axi.HAS_RRESP {1} \
+  CONFIG.s_axi.HAS_WSTRB {1} \
+  CONFIG.s_axi.ID_WIDTH {0} \
+  CONFIG.s_axi.INSERT_VIP {0} \
+  CONFIG.s_axi.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi.NUM_READ_OUTSTANDING {2} \
+  CONFIG.s_axi.NUM_READ_THREADS {1} \
+  CONFIG.s_axi.NUM_WRITE_OUTSTANDING {2} \
+  CONFIG.s_axi.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi.PHASE {0.000} \
+  CONFIG.s_axi.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.RUSER_WIDTH {0} \
+  CONFIG.s_axi.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.WUSER_WIDTH {0} \
+  CONFIG.s_axi_aclk.ASSOCIATED_BUSIF {s_axi} \
+  CONFIG.s_axi_aclk.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.s_axi_aclk.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.s_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.s_axi_aclk.INSERT_VIP {0} \
+  CONFIG.s_axi_aclk.PHASE {0.000} \
+  CONFIG.s_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.s_axi_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.s_axis_aclk.ASSOCIATED_BUSIF {} \
+  CONFIG.s_axis_aclk.ASSOCIATED_RESET {} \
+  CONFIG.s_axis_aclk.CLK_DOMAIN {} \
+  CONFIG.s_axis_aclk.FREQ_HZ {100000000} \
+  CONFIG.s_axis_aclk.INSERT_VIP {0} \
+  CONFIG.s_axis_aclk.PHASE {0.000} \
+  CONFIG.s_axis_signal_clock.ASSOCIATED_BUSIF {s_axis} \
+  CONFIG.s_axis_signal_clock.ASSOCIATED_RESET {} \
+  CONFIG.s_axis_signal_clock.CLK_DOMAIN {} \
+  CONFIG.s_axis_signal_clock.FREQ_HZ {100000000} \
+  CONFIG.s_axis_signal_clock.INSERT_VIP {0} \
+  CONFIG.s_axis_signal_clock.PHASE {0.000} " [get_ips system_axi_ad9361_dac_dma_0]
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ad9361_adc_dma_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of system_axi_ad9361_adc_dma_0 (analog.com:user:axi_dmac:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'DMA_AXI_PROTOCOL_SRC' from '0' to '1' has been ignored for IP 'system_axi_ad9361_adc_dma_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv analog.com:user:axi_dmac:1.0 -user_name system_axi_ad9361_adc_dma_0
+set_property -dict "\
+  CONFIG.ALLOW_ASYM_MEM {1} \
+  CONFIG.ASYNC_CLK_DEST_REQ {false} \
+  CONFIG.ASYNC_CLK_REQ_SRC {true} \
+  CONFIG.ASYNC_CLK_SRC_DEST {true} \
+  CONFIG.AXI_ID_WIDTH_DEST {1} \
+  CONFIG.AXI_ID_WIDTH_SRC {1} \
+  CONFIG.AXI_SLICE_DEST {false} \
+  CONFIG.AXI_SLICE_SRC {false} \
+  CONFIG.CYCLIC {false} \
+  CONFIG.Component_Name {system_axi_ad9361_adc_dma_0} \
+  CONFIG.DISABLE_DEBUG_REGISTERS {false} \
+  CONFIG.DMA_2D_TRANSFER {false} \
+  CONFIG.DMA_AXIS_DEST_W {4} \
+  CONFIG.DMA_AXIS_ID_W {8} \
+  CONFIG.DMA_AXI_ADDR_WIDTH {29} \
+  CONFIG.DMA_AXI_PROTOCOL_DEST {1} \
+  CONFIG.DMA_AXI_PROTOCOL_SRC {1} \
+  CONFIG.DMA_DATA_WIDTH_DEST {64} \
+  CONFIG.DMA_DATA_WIDTH_SRC {64} \
+  CONFIG.DMA_LENGTH_WIDTH {24} \
+  CONFIG.DMA_TYPE_DEST {0} \
+  CONFIG.DMA_TYPE_SRC {2} \
+  CONFIG.ENABLE_DIAGNOSTICS_IF {false} \
+  CONFIG.FIFO_SIZE {8} \
+  CONFIG.ID {0} \
+  CONFIG.MAX_BYTES_PER_BURST {128} \
+  CONFIG.SYNC_TRANSFER_START {true} \
+  CONFIG.fifo_rd_clk.ASSOCIATED_BUSIF {} \
+  CONFIG.fifo_rd_clk.ASSOCIATED_RESET {} \
+  CONFIG.fifo_rd_clk.CLK_DOMAIN {} \
+  CONFIG.fifo_rd_clk.FREQ_HZ {100000000} \
+  CONFIG.fifo_rd_clk.INSERT_VIP {0} \
+  CONFIG.fifo_rd_clk.PHASE {0.000} \
+  CONFIG.fifo_rd_signal_clock.ASSOCIATED_BUSIF {fifo_rd} \
+  CONFIG.fifo_rd_signal_clock.ASSOCIATED_RESET {} \
+  CONFIG.fifo_rd_signal_clock.CLK_DOMAIN {} \
+  CONFIG.fifo_rd_signal_clock.FREQ_HZ {100000000} \
+  CONFIG.fifo_rd_signal_clock.INSERT_VIP {0} \
+  CONFIG.fifo_rd_signal_clock.PHASE {0.000} \
+  CONFIG.fifo_wr_clk.ASSOCIATED_BUSIF {fifo_wr} \
+  CONFIG.fifo_wr_clk.ASSOCIATED_RESET {} \
+  CONFIG.fifo_wr_clk.CLK_DOMAIN {} \
+  CONFIG.fifo_wr_clk.FREQ_HZ {100000000} \
+  CONFIG.fifo_wr_clk.INSERT_VIP {0} \
+  CONFIG.fifo_wr_clk.PHASE {0.000} \
+  CONFIG.fifo_wr_signal_clock.ASSOCIATED_BUSIF {fifo_wr} \
+  CONFIG.fifo_wr_signal_clock.ASSOCIATED_RESET {} \
+  CONFIG.fifo_wr_signal_clock.CLK_DOMAIN {system_util_ad9361_divclk_0_clk_out} \
+  CONFIG.fifo_wr_signal_clock.FREQ_HZ {100000000} \
+  CONFIG.fifo_wr_signal_clock.INSERT_VIP {0} \
+  CONFIG.fifo_wr_signal_clock.PHASE {0.000} \
+  CONFIG.irq.PortWidth {1} \
+  CONFIG.irq.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.m_axis_aclk.ASSOCIATED_BUSIF {} \
+  CONFIG.m_axis_aclk.ASSOCIATED_RESET {} \
+  CONFIG.m_axis_aclk.CLK_DOMAIN {} \
+  CONFIG.m_axis_aclk.FREQ_HZ {100000000} \
+  CONFIG.m_axis_aclk.INSERT_VIP {0} \
+  CONFIG.m_axis_aclk.PHASE {0.000} \
+  CONFIG.m_axis_signal_clock.ASSOCIATED_BUSIF {m_axis} \
+  CONFIG.m_axis_signal_clock.ASSOCIATED_RESET {} \
+  CONFIG.m_axis_signal_clock.CLK_DOMAIN {} \
+  CONFIG.m_axis_signal_clock.FREQ_HZ {100000000} \
+  CONFIG.m_axis_signal_clock.INSERT_VIP {0} \
+  CONFIG.m_axis_signal_clock.PHASE {0.000} \
+  CONFIG.m_dest_axi.ADDR_WIDTH {29} \
+  CONFIG.m_dest_axi.ARUSER_WIDTH {0} \
+  CONFIG.m_dest_axi.AWUSER_WIDTH {0} \
+  CONFIG.m_dest_axi.BUSER_WIDTH {0} \
+  CONFIG.m_dest_axi.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.m_dest_axi.DATA_WIDTH {64} \
+  CONFIG.m_dest_axi.FREQ_HZ {100000000} \
+  CONFIG.m_dest_axi.HAS_BRESP {1} \
+  CONFIG.m_dest_axi.HAS_BURST {0} \
+  CONFIG.m_dest_axi.HAS_CACHE {0} \
+  CONFIG.m_dest_axi.HAS_LOCK {0} \
+  CONFIG.m_dest_axi.HAS_PROT {0} \
+  CONFIG.m_dest_axi.HAS_QOS {0} \
+  CONFIG.m_dest_axi.HAS_REGION {0} \
+  CONFIG.m_dest_axi.HAS_RRESP {0} \
+  CONFIG.m_dest_axi.HAS_WSTRB {1} \
+  CONFIG.m_dest_axi.ID_WIDTH {0} \
+  CONFIG.m_dest_axi.INSERT_VIP {0} \
+  CONFIG.m_dest_axi.MAX_BURST_LENGTH {16} \
+  CONFIG.m_dest_axi.NUM_READ_OUTSTANDING {0} \
+  CONFIG.m_dest_axi.NUM_READ_THREADS {1} \
+  CONFIG.m_dest_axi.NUM_WRITE_OUTSTANDING {8} \
+  CONFIG.m_dest_axi.NUM_WRITE_THREADS {1} \
+  CONFIG.m_dest_axi.PHASE {0.000} \
+  CONFIG.m_dest_axi.PROTOCOL {AXI3} \
+  CONFIG.m_dest_axi.READ_WRITE_MODE {WRITE_ONLY} \
+  CONFIG.m_dest_axi.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_dest_axi.RUSER_WIDTH {0} \
+  CONFIG.m_dest_axi.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_dest_axi.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_dest_axi.WUSER_WIDTH {0} \
+  CONFIG.m_dest_axi_aclk.ASSOCIATED_BUSIF {m_dest_axi} \
+  CONFIG.m_dest_axi_aclk.ASSOCIATED_RESET {m_dest_axi_aresetn} \
+  CONFIG.m_dest_axi_aclk.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.m_dest_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.m_dest_axi_aclk.INSERT_VIP {0} \
+  CONFIG.m_dest_axi_aclk.PHASE {0.000} \
+  CONFIG.m_dest_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.m_dest_axi_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.m_src_axi_aclk.ASSOCIATED_BUSIF {m_src_axi} \
+  CONFIG.m_src_axi_aclk.ASSOCIATED_RESET {m_src_axi_aresetn} \
+  CONFIG.m_src_axi_aclk.CLK_DOMAIN {} \
+  CONFIG.m_src_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.m_src_axi_aclk.INSERT_VIP {0} \
+  CONFIG.m_src_axi_aclk.PHASE {0.000} \
+  CONFIG.m_src_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.m_src_axi_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.s_axi.ADDR_WIDTH {11} \
+  CONFIG.s_axi.ARUSER_WIDTH {0} \
+  CONFIG.s_axi.AWUSER_WIDTH {0} \
+  CONFIG.s_axi.BUSER_WIDTH {0} \
+  CONFIG.s_axi.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.s_axi.DATA_WIDTH {32} \
+  CONFIG.s_axi.FREQ_HZ {100000000} \
+  CONFIG.s_axi.HAS_BRESP {1} \
+  CONFIG.s_axi.HAS_BURST {0} \
+  CONFIG.s_axi.HAS_CACHE {0} \
+  CONFIG.s_axi.HAS_LOCK {0} \
+  CONFIG.s_axi.HAS_PROT {1} \
+  CONFIG.s_axi.HAS_QOS {0} \
+  CONFIG.s_axi.HAS_REGION {0} \
+  CONFIG.s_axi.HAS_RRESP {1} \
+  CONFIG.s_axi.HAS_WSTRB {1} \
+  CONFIG.s_axi.ID_WIDTH {0} \
+  CONFIG.s_axi.INSERT_VIP {0} \
+  CONFIG.s_axi.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi.NUM_READ_OUTSTANDING {2} \
+  CONFIG.s_axi.NUM_READ_THREADS {1} \
+  CONFIG.s_axi.NUM_WRITE_OUTSTANDING {2} \
+  CONFIG.s_axi.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi.PHASE {0.000} \
+  CONFIG.s_axi.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.RUSER_WIDTH {0} \
+  CONFIG.s_axi.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.WUSER_WIDTH {0} \
+  CONFIG.s_axi_aclk.ASSOCIATED_BUSIF {s_axi} \
+  CONFIG.s_axi_aclk.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.s_axi_aclk.CLK_DOMAIN {system_sys_ps7_0_FCLK_CLK0} \
+  CONFIG.s_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.s_axi_aclk.INSERT_VIP {0} \
+  CONFIG.s_axi_aclk.PHASE {0.000} \
+  CONFIG.s_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.s_axi_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.s_axis_aclk.ASSOCIATED_BUSIF {} \
+  CONFIG.s_axis_aclk.ASSOCIATED_RESET {} \
+  CONFIG.s_axis_aclk.CLK_DOMAIN {} \
+  CONFIG.s_axis_aclk.FREQ_HZ {100000000} \
+  CONFIG.s_axis_aclk.INSERT_VIP {0} \
+  CONFIG.s_axis_aclk.PHASE {0.000} \
+  CONFIG.s_axis_signal_clock.ASSOCIATED_BUSIF {s_axis} \
+  CONFIG.s_axis_signal_clock.ASSOCIATED_RESET {} \
+  CONFIG.s_axis_signal_clock.CLK_DOMAIN {} \
+  CONFIG.s_axis_signal_clock.FREQ_HZ {100000000} \
+  CONFIG.s_axis_signal_clock.INSERT_VIP {0} \
+  CONFIG.s_axis_signal_clock.PHASE {0.000} " [get_ips system_axi_ad9361_adc_dma_0]
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ad9361_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_ad9361_0 (analog.com:user:axi_ad9361:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  4 14:42:13 2025
+| Host         : DESKTOP-4P86UO2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_GND_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_GND_1_0 (xilinx.com:ip:xlconstant:1.1 (Rev. 5)) to Vivado generation flows.
+

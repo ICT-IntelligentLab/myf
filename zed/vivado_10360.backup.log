@@ -1,0 +1,957 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec  4 14:34:53 2025
+# Process ID: 10360
+# Current directory: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23448 C:\Users\Admin\Desktop\hdl-hdl_2019_r1\projects\fmcomms2\zed\fmcomms2_zed.xpr
+# Log file: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/vivado.log
+# Journal file: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/Admin/Desktop/ghdl/library'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Admin/Desktop/hdl-hdl_2019_r1/library'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Admin/Desktop/ghdl/library'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 867.742 ; gain = 214.039
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - sys_ps7
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_main
+Adding cell -- analog.com:user:util_i2c_mixer:1.0 - sys_i2c_mixer
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_200m_rstgen
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - sys_logic_inv
+Adding cell -- analog.com:user:axi_clkgen:1.0 - axi_hdmi_clkgen
+Adding cell -- analog.com:user:axi_hdmi_tx:1.0 - axi_hdmi_core
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_hdmi_dma
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - sys_audio_clkgen
+Adding cell -- analog.com:user:axi_spdif_tx:1.0 - axi_spdif_tx_core
+Adding cell -- analog.com:user:axi_i2s_adi:1.0 - axi_i2s_adi
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_fmc
+Adding cell -- analog.com:user:axi_sysid:1.0 - axi_sysid_0
+Adding cell -- analog.com:user:sysid_rom:1.0 - rom_sys_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - GND_1
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_cpu_interconnect
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_hp0_interconnect
+Adding cell -- analog.com:user:axi_ad9361:1.0 - axi_ad9361
+Adding cell -- analog.com:user:util_tdd_sync:1.0 - util_ad9361_tdd_sync
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - util_ad9361_divclk_sel_concat
+Adding cell -- xilinx.com:ip:util_reduced_logic:2.0 - util_ad9361_divclk_sel
+Adding cell -- analog.com:user:util_clkdiv:1.0 - util_ad9361_divclk
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - util_ad9361_divclk_reset
+Adding cell -- analog.com:user:util_wfifo:1.0 - util_ad9361_adc_fifo
+Adding cell -- analog.com:user:util_cpack2:1.0 - util_ad9361_adc_pack
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_ad9361_adc_dma
+Adding cell -- analog.com:user:util_rfifo:1.0 - axi_ad9361_dac_fifo
+Adding cell -- analog.com:user:util_upack2:1.0 - util_ad9361_dac_upack
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_ad9361_dac_dma
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_hp1_interconnect
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_hp2_interconnect
+Successfully read diagram <system> from BD file <C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 994.938 ; gain = 70.965
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7z020clg484-1
+current_run [get_runs synth_2]
+set_property part xc7z020clg484-2 [current_project]
+INFO: [Project 1-154] The current project board 'em.avnet.com:zed:part0:1.3' is reset to empty (None). Use 'Project Settings' part selector (GUI) or issue set_property Tcl Command to set the board again.
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {system_util_ad9361_adc_pack_0 system_axi_hp1_interconnect_0 system_sys_ps7_0 system_axi_ad9361_adc_dma_0 system_sys_200m_rstgen_0 system_sys_audio_clkgen_0 system_util_ad9361_adc_fifo_0 system_sys_rstgen_0 system_rom_sys_0_0 system_axi_hp2_interconnect_0 system_util_ad9361_tdd_sync_0 system_axi_ad9361_0 system_util_ad9361_divclk_0 system_sys_i2c_mixer_0 system_axi_i2s_adi_0 system_sys_concat_intc_0 system_axi_ad9361_dac_dma_0 system_axi_hdmi_clkgen_0 system_axi_spdif_tx_core_0 system_util_ad9361_dac_upack_0 system_sys_logic_inv_0 system_axi_hp0_interconnect_0 system_axi_ad9361_dac_fifo_0 system_GND_1_0 system_axi_iic_fmc_0 system_util_ad9361_divclk_sel_0 system_axi_hdmi_core_0 system_axi_sysid_0_0 system_util_ad9361_divclk_sel_concat_0 system_axi_cpu_interconnect_0 system_axi_iic_main_0 system_util_ad9361_divclk_reset_0 system_axi_hdmi_dma_0}] -log ip_upgrade.log
+Upgrading 'C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-3420] Updated system_GND_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_ad9361_0 to use current project options
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'DMA_AXI_PROTOCOL_SRC' from '0' to '1' has been ignored for IP 'system_axi_ad9361_adc_dma_0'
+INFO: [IP_Flow 19-3420] Updated system_axi_ad9361_adc_dma_0 to use current project options
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'DMA_AXI_PROTOCOL_DEST' from '0' to '1' has been ignored for IP 'system_axi_ad9361_dac_dma_0'
+INFO: [IP_Flow 19-3420] Updated system_axi_ad9361_dac_dma_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_ad9361_dac_fifo_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_cpu_interconnect_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_hdmi_clkgen_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_hdmi_core_0 to use current project options
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'DMA_AXI_PROTOCOL_DEST' from '0' to '1' has been ignored for IP 'system_axi_hdmi_dma_0'
+INFO: [IP_Flow 19-3420] Updated system_axi_hdmi_dma_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_hp0_interconnect_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_hp1_interconnect_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_hp2_interconnect_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_i2s_adi_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_iic_fmc_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_iic_main_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_spdif_tx_core_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_sysid_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_rom_sys_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_sys_200m_rstgen_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_sys_audio_clkgen_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_sys_concat_intc_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_sys_i2c_mixer_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_sys_logic_inv_0 to use current project options
+INFO: [PS7-1] Applying Board Preset ZedBoard...
+WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+INFO: [IP_Flow 19-3420] Updated system_sys_ps7_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_sys_rstgen_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_util_ad9361_adc_fifo_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_util_ad9361_adc_pack_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_util_ad9361_dac_upack_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_util_ad9361_divclk_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_util_ad9361_divclk_reset_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_util_ad9361_divclk_sel_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_util_ad9361_divclk_sel_concat_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_util_ad9361_tdd_sync_0 to use current project options
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'system_axi_ad9361_adc_dma_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'system_axi_ad9361_dac_dma_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'system_axi_hdmi_dma_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\Admin\Desktop\hdl-hdl_2019_r1\projects\fmcomms2\zed\fmcomms2_zed.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.766 ; gain = 231.383
+export_ip_user_files -of_objects [get_ips {system_util_ad9361_adc_pack_0 system_axi_hp1_interconnect_0 system_sys_ps7_0 system_axi_ad9361_adc_dma_0 system_sys_200m_rstgen_0 system_sys_audio_clkgen_0 system_util_ad9361_adc_fifo_0 system_sys_rstgen_0 system_rom_sys_0_0 system_axi_hp2_interconnect_0 system_util_ad9361_tdd_sync_0 system_axi_ad9361_0 system_util_ad9361_divclk_0 system_sys_i2c_mixer_0 system_axi_i2s_adi_0 system_sys_concat_intc_0 system_axi_ad9361_dac_dma_0 system_axi_hdmi_clkgen_0 system_axi_spdif_tx_core_0 system_util_ad9361_dac_upack_0 system_sys_logic_inv_0 system_axi_hp0_interconnect_0 system_axi_ad9361_dac_fifo_0 system_GND_1_0 system_axi_iic_fmc_0 system_util_ad9361_divclk_sel_0 system_axi_hdmi_core_0 system_axi_sysid_0_0 system_util_ad9361_divclk_sel_concat_0 system_axi_cpu_interconnect_0 system_axi_iic_main_0 system_util_ad9361_divclk_reset_0 system_axi_hdmi_dma_0}] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd]
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [#UNDEF] When using EMIO pins for SPI_1 tie SSIN High in the PL bitstream
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [#UNDEF] When using EMIO pins for SPI_1 tie SSIN High in the PL bitstream
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/delay_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK1 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/l_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361_dac_fifo/din_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361_dac_fifo/dout_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361_dac_fifo/dout_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/hdmi_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_hdmi_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/hdmi_out_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_hdmi_core_0_hdmi_out_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/vdma_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/data_clk_i have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_audio_clkgen_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/dma_req_tx_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/dma_req_rx_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_spdif_tx_core/spdif_data_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_audio_clkgen_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /axi_spdif_tx_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_spdif_tx_core/dma_req_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_sysid_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /rom_sys_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_fifo/din_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_fifo/din_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_fifo/dout_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_pack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_dac_upack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_divclk/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_divclk/clk_out have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_tdd_sync/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+Wrote  : <C:\Users\Admin\Desktop\hdl-hdl_2019_r1\projects\fmcomms2\zed\fmcomms2_zed.srcs\sources_1\bd\system\system.bd> 
+VHDL Output written to : C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_main .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_i2c_mixer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_concat_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_200m_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_logic_inv .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hdmi_clkgen .
+WARNING: [IP_Flow 19-1971] File named "../xilinx/common/up_xfer_cntrl_constr.xdc" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../xilinx/common/ad_rst_constr.xdc" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../xilinx/common/up_xfer_status_constr.xdc" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../xilinx/common/up_clock_mon_constr.xdc" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hdmi_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hdmi_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_audio_clkgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_spdif_tx_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_i2s_adi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_fmc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_sysid_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rom_sys_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GND_1 .
+Exporting to file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/hw_handoff/system_axi_hp0_interconnect_0.hwh
+Generated Block Design Tcl file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/hw_handoff/system_axi_hp0_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/synth/system_axi_hp0_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp0_interconnect .
+WARNING: [IP_Flow 19-1971] File named "../xilinx/common/up_xfer_cntrl_constr.xdc" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../xilinx/common/ad_rst_constr.xdc" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../xilinx/common/up_xfer_status_constr.xdc" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../xilinx/common/up_clock_mon_constr.xdc" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_tdd_sync .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk_sel_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk_sel .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk_reset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_adc_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_adc_pack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361_adc_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361_dac_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_dac_upack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361_dac_dma .
+Exporting to file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/hw_handoff/system_axi_hp1_interconnect_0.hwh
+Generated Block Design Tcl file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/hw_handoff/system_axi_hp1_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/synth/system_axi_hp1_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp1_interconnect .
+Exporting to file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/hw_handoff/system_axi_hp2_interconnect_0.hwh
+Generated Block Design Tcl file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/hw_handoff/system_axi_hp2_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/synth/system_axi_hp2_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp2_interconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/s00_couplers/auto_pc .
+Exporting to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 1824.758 ; gain = 356.992
+export_ip_user_files -of_objects [get_files C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd] -directory C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.ip_user_files -ipstatic_source_dir C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/modelsim} {questa=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/questa} {riviera=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/riviera} {activehdl=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+open_bd_design {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd}
+WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_UIPARAM_DDR_FREQ_MHZ {533.333333} CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 {0.0} CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 {0.0} CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 {0.0} CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 {0.0} CONFIG.PCW_UIPARAM_DDR_BOARD_DELAY0 {0.25} CONFIG.PCW_UIPARAM_DDR_BOARD_DELAY1 {0.25} CONFIG.PCW_UIPARAM_DDR_BOARD_DELAY2 {0.25} CONFIG.PCW_UIPARAM_DDR_BOARD_DELAY3 {0.25} CONFIG.PCW_UIPARAM_DDR_PARTNO {MT41J256M16 RE-125} CONFIG.PCW_UIPARAM_DDR_USE_INTERNAL_VREF {0} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells sys_ps7]
+endgroup
+generate_target all [get_files  C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd]
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [#UNDEF] When using EMIO pins for SPI_1 tie SSIN High in the PL bitstream
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [#UNDEF] When using EMIO pins for SPI_1 tie SSIN High in the PL bitstream
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/delay_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK1 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/l_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361_dac_fifo/din_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361_dac_fifo/dout_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361_dac_fifo/dout_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/hdmi_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_hdmi_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/hdmi_out_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_hdmi_core_0_hdmi_out_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/vdma_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/data_clk_i have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_audio_clkgen_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/dma_req_tx_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/dma_req_rx_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_spdif_tx_core/spdif_data_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_audio_clkgen_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /axi_spdif_tx_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_spdif_tx_core/dma_req_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_sysid_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /rom_sys_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_fifo/din_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_fifo/din_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_fifo/dout_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_pack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_dac_upack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_divclk/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_divclk/clk_out have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_tdd_sync/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+Wrote  : <C:\Users\Admin\Desktop\hdl-hdl_2019_r1\projects\fmcomms2\zed\fmcomms2_zed.srcs\sources_1\bd\system\system.bd> 
+VHDL Output written to : C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_main .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_i2c_mixer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_concat_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_200m_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_logic_inv .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hdmi_clkgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hdmi_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hdmi_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_audio_clkgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_spdif_tx_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_i2s_adi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_fmc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_sysid_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rom_sys_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GND_1 .
+Exporting to file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/hw_handoff/system_axi_hp0_interconnect_0.hwh
+Generated Block Design Tcl file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/hw_handoff/system_axi_hp0_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/synth/system_axi_hp0_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp0_interconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_tdd_sync .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk_sel_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk_sel .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk_reset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_adc_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_adc_pack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361_adc_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361_dac_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_dac_upack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361_dac_dma .
+Exporting to file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/hw_handoff/system_axi_hp1_interconnect_0.hwh
+Generated Block Design Tcl file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/hw_handoff/system_axi_hp1_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/synth/system_axi_hp1_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp1_interconnect .
+Exporting to file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/hw_handoff/system_axi_hp2_interconnect_0.hwh
+Generated Block Design Tcl file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/hw_handoff/system_axi_hp2_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/synth/system_axi_hp2_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp2_interconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/s00_couplers/auto_pc .
+Exporting to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 2075.332 ; gain = 154.945
+export_ip_user_files -of_objects [get_files C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd] -directory C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.ip_user_files -ipstatic_source_dir C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/modelsim} {questa=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/questa} {riviera=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/riviera} {activehdl=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+validate_bd_design -force
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [#UNDEF] When using EMIO pins for SPI_1 tie SSIN High in the PL bitstream
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps7/IRQ_F2P
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [#UNDEF] When using EMIO pins for SPI_1 tie SSIN High in the PL bitstream
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/delay_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK1 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/l_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361_dac_fifo/din_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361_dac_fifo/dout_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9361_dac_fifo/dout_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/hdmi_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_hdmi_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/hdmi_out_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_hdmi_core_0_hdmi_out_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/vdma_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_hdmi_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/data_clk_i have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_audio_clkgen_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/dma_req_tx_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/dma_req_rx_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_i2s_adi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_spdif_tx_core/spdif_data_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_audio_clkgen_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /axi_spdif_tx_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_spdif_tx_core/dma_req_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_sysid_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /rom_sys_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_fifo/din_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_fifo/din_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_fifo/dout_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_adc_pack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_dac_upack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_divclk/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_ad9361_0_l_clk 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_divclk/clk_out have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_ad9361_divclk_0_clk_out 
+WARNING: [BD 41-927] Following properties on pin /util_ad9361_tdd_sync/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps7_0_FCLK_CLK0 
+validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 2100.660 ; gain = 10.402
+regenerate_bd_layout
+report_ip_status -name ip_status 
+generate_target all [get_files  C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\Admin\Desktop\hdl-hdl_2019_r1\projects\fmcomms2\zed\fmcomms2_zed.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+VHDL Output written to : C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_main .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_i2c_mixer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_concat_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_200m_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_logic_inv .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hdmi_clkgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hdmi_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hdmi_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_audio_clkgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_spdif_tx_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_i2s_adi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_fmc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_sysid_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rom_sys_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GND_1 .
+Exporting to file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/hw_handoff/system_axi_hp0_interconnect_0.hwh
+Generated Block Design Tcl file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/hw_handoff/system_axi_hp0_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/synth/system_axi_hp0_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp0_interconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_tdd_sync .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk_sel_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk_sel .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_divclk_reset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_adc_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_adc_pack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361_adc_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361_dac_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ad9361_dac_upack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9361_dac_dma .
+Exporting to file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/hw_handoff/system_axi_hp1_interconnect_0.hwh
+Generated Block Design Tcl file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/hw_handoff/system_axi_hp1_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/synth/system_axi_hp1_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp1_interconnect .
+Exporting to file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/hw_handoff/system_axi_hp2_interconnect_0.hwh
+Generated Block Design Tcl file c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/hw_handoff/system_axi_hp2_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/synth/system_axi_hp2_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp2_interconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/s00_couplers/auto_pc .
+Exporting to file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2293.059 ; gain = 190.586
+export_ip_user_files -of_objects [get_files C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd] -directory C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.ip_user_files -ipstatic_source_dir C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/modelsim} {questa=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/questa} {riviera=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/riviera} {activehdl=C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd] -top
+WARNING: [Vivado 12-3482] The generated wrapper file has already been imported into the project, the imported file is:
+'C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/imports/hdl/system_wrapper.v'
+add_files -norecurse C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+launch_runs synth_2 -jobs 16
+WARNING: [HDL 9-3756] overwriting previous definition of module 'system_wrapper' [C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/imports/hdl/system_wrapper.v:12]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'system_wrapper()' found in library 'xil_defaultlib'
+Duplicate found at line 12 of file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/hdl/system_wrapper.v
+	(Active) Duplicate found at line 12 of file C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/imports/hdl/system_wrapper.v
+[Thu Dec  4 14:55:13 2025] Launched synth_2...
+Run output will be captured here: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/synth_2/runme.log
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-2
+INFO: [Netlist 29-17] Analyzing 2207 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_main/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_main/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_200m_rstgen_0/system_sys_200m_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_200m_rstgen/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_200m_rstgen_0/system_sys_200m_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_200m_rstgen/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_200m_rstgen_0/system_sys_200m_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_200m_rstgen/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_200m_rstgen_0/system_sys_200m_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_200m_rstgen/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_core_0/axi_hdmi_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_core_0/axi_hdmi_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_clock_mon'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_clock_mon'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_clock_mon'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_clock_mon'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_clock_mon'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_clock_mon'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_0/i_up_adc_channel/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_0/i_up_adc_channel/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_vdma_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_vdma_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_1/i_up_adc_channel/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_1/i_up_adc_channel/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_2/i_up_adc_channel/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_2/i_up_adc_channel/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_3/i_up_adc_channel/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_3/i_up_adc_channel/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_delay_cntrl/i_delay_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_delay_cntrl/i_delay_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_mmcm_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_mmcm_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_mmcm_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_mmcm_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_core_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_core_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_up_clkgen/i_mmcm_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_up_clkgen/i_mmcm_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_core_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_core_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_vdma_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_vdma_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_core_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_core_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_control'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_control'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_counter_values'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_counter_values'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_3/i_up_adc_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_3/i_up_adc_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_0/i_up_adc_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_0/i_up_adc_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_1/i_up_adc_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_1/i_up_adc_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_2/i_up_adc_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_2/i_up_adc_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_3/i_up_dac_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_3/i_up_dac_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_0/i_up_dac_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_0/i_up_dac_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_1/i_up_dac_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_1/i_up_dac_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_2/i_up_dac_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_2/i_up_dac_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_spdif_tx_core_0/axi_spdif_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_spdif_tx_core/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_spdif_tx_core_0/axi_spdif_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_spdif_tx_core/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_fmc/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_fmc/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/ip/ip_1/bd_a17c_psr_aclk_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_hp0_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/ip/ip_1/bd_a17c_psr_aclk_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_hp0_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/ip/ip_1/bd_a17c_psr_aclk_0.xdc] for cell 'i_system_wrapper/system_i/axi_hp0_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/ip/ip_1/bd_a17c_psr_aclk_0.xdc] for cell 'i_system_wrapper/system_i/axi_hp0_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_ad9361_0/axi_ad9361_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_ad9361_0/axi_ad9361_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_clock_mon'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_clock_mon'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_clock_mon'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_clock_mon'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_clock_mon'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_clock_mon'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_0/i_up_adc_channel/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_0/i_up_adc_channel/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_vdma_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_vdma_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_1/i_up_adc_channel/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_1/i_up_adc_channel/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_2/i_up_adc_channel/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_2/i_up_adc_channel/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_3/i_up_adc_channel/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_3/i_up_adc_channel/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_status'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_status'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_delay_cntrl/i_delay_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_delay_cntrl/i_delay_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_mmcm_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_mmcm_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_mmcm_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_mmcm_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_core_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_core_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_up_clkgen/i_mmcm_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_up_clkgen/i_mmcm_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_core_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_core_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_vdma_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_vdma_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_core_rst_reg'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/ad_rst_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_core_rst_reg'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_control'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_control'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_counter_values'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tdd/i_up_tdd_cntrl/i_xfer_tdd_counter_values'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_3/i_up_adc_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_3/i_up_adc_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_0/i_up_adc_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_0/i_up_adc_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_1/i_up_adc_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_1/i_up_adc_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_2/i_up_adc_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_rx_channel_2/i_up_adc_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_rx/i_up_adc_common/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_3/i_up_dac_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_3/i_up_dac_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_0/i_up_dac_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_0/i_up_dac_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_1/i_up_dac_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_1/i_up_dac_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_2/i_up_dac_channel/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_tx_channel_2/i_up_dac_channel/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst/i_tx/i_up_dac_common/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_util_ad9361_tdd_sync_0/util_tdd_sync_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_tdd_sync/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_util_ad9361_tdd_sync_0/util_tdd_sync_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_tdd_sync/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_util_ad9361_divclk_reset_0/system_util_ad9361_divclk_reset_0_board.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk_reset/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_util_ad9361_divclk_reset_0/system_util_ad9361_divclk_reset_0_board.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk_reset/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_util_ad9361_divclk_reset_0/system_util_ad9361_divclk_reset_0.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk_reset/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_util_ad9361_divclk_reset_0/system_util_ad9361_divclk_reset_0.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk_reset/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_util_ad9361_adc_fifo_0/util_wfifo_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_adc_fifo/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_util_ad9361_adc_fifo_0/util_wfifo_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_adc_fifo/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_ad9361_dac_fifo_0/util_rfifo_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_ad9361_dac_fifo_0/util_rfifo_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_dac_fifo/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/ip/ip_1/bd_31bd_psr_aclk_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/ip/ip_1/bd_31bd_psr_aclk_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/ip/ip_1/bd_31bd_psr_aclk_0.xdc] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/ip/ip_1/bd_31bd_psr_aclk_0.xdc] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_1/bd_c0fd_psr_aclk_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_1/bd_c0fd_psr_aclk_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_1/bd_c0fd_psr_aclk_0.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_1/bd_c0fd_psr_aclk_0.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/system_constr.xdc]
+Finished Parsing XDC File [C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/system_constr.xdc]
+Parsing XDC File [C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/common/zed/zed_system_constr.xdc]
+Finished Parsing XDC File [C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/common/zed/zed_system_constr.xdc]
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:2]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:2]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3246.309 ; gain = 586.789
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_late.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_late.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc] for cell 'i_system_wrapper/system_i/axi_i2s_adi/U0'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc] for cell 'i_system_wrapper/system_i/axi_i2s_adi/U0'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_ad9361_0/system_axi_ad9361_0_pps_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_ad9361_0/system_axi_ad9361_0_pps_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_util_ad9361_divclk_0/util_clkdiv_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_util_ad9361_divclk_0/util_clkdiv_constr.xdc] for cell 'i_system_wrapper/system_i/util_ad9361_divclk/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_ad9361_adc_dma_0/system_axi_ad9361_adc_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_adc_dma/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_ad9361_adc_dma_0/system_axi_ad9361_adc_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_adc_dma/inst'
+Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_ad9361_dac_dma_0/system_axi_ad9361_dac_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_dac_dma/inst'
+Finished Parsing XDC File [c:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/ip/system_axi_ad9361_dac_dma_0/system_axi_ad9361_dac_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_dac_dma/inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp0_interconnect/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp0_interconnect/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp0_interconnect/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp0_interconnect/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'i_system_wrapper/system_i/axi_hp1_interconnect/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3246.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 232 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 55 instances
+  OBUFDS => OBUFDS: 8 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 9 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 160 instances
+
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 3322.621 ; gain = 977.828
+launch_runs impl_2 -to_step write_bitstream -jobs 16
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3324.805 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.114 . Memory (MB): peak = 3331.090 ; gain = 6.285
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3331.090 ; gain = 0.000
+[Thu Dec  4 15:01:40 2025] Launched impl_2...
+Run output will be captured here: C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 3331.164 ; gain = 6.359
+file copy -force C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.sysdef C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+
+launch_sdk -workspace C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk -hwspec C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk -hwspec C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd}
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+set_property PROGRAM.FILE {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.runs/impl_2/system_top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+open_bd_design {C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.srcs/sources_1/bd/system/system.bd}
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210357A7D00EA
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  4 18:37:36 2025...

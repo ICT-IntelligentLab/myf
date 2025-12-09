@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>system_top_hw_platform_0_Traces</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.linuxtools.tmf.project.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Traces/Run_十二月-05_12-46/PS_Trace_十二月-05_12-46/PS_Trace_十二月-05_12-46_</name>
+			<type>1</type>
+			<location>C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top_hw_platform_0_Traces/Traces/.bookmarks</location>
+		</link>
+		<link>
+			<name>Traces/Run_十二月-05_16-10/PS_Trace_十二月-05_16-10/PS_Trace_十二月-05_16-10_</name>
+			<type>1</type>
+			<location>C:/Users/Admin/Desktop/hdl-hdl_2019_r1/projects/fmcomms2/zed/fmcomms2_zed.sdk/system_top_hw_platform_0_Traces/Traces/.bookmarks</location>
+		</link>
+	</linkedResources>
+</projectDescription>
